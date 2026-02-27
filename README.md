@@ -65,7 +65,7 @@ I am a 19-year-old **Artificial Intelligence & Machine Learning** student at **C
 
 | Project | Description | Stack | Links |
 |--------|-------------|-------|-------|
-| **Quant Trading Roadmap Portal** | A structured, interactive dashboard to track progress through a professional quant finance curriculum. | React, TypeScript, Vite, Recharts | [Live](https://quant-roadmap-portal.vercel.app/) \| [Repo](https://github.com/cod-x-prince/quant-roadmap-portal) |
+| **Quant Trading Roadmap Portal** | A structured, interactive dashboard to track progress through a professional quant finance curriculum. | React, TypeScript, Vite, Recharts | [Live](https://quant-roadmap-portal.vercel.app/) \| [Repo](https://github.com/cod-x-prince/finance-roadmap) |
 | **Mean Reversion on Nifty** *(WIP)* | Backtesting & live simulation of mean-reversion strategies using Nifty 50 data. | Python, Pandas, NumPy, Backtrader | (private repo) |
 | **AI-Augmented Dev Workflows** | Experimentation with LLM-based code generation and autonomous agents for rapid prototyping. | Python, LangChain, OpenAI API | (coming soon) |
 
