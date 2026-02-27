@@ -1,14 +1,17 @@
 <div align="center">
 
-# ⚡ Parmbeer Singh
+# ⚡ Parmbeer Singh (Prince Rajput)
 **AIML Undergrad @ CMRIT Bangalore • Algorithmic Trader • Visual Architect**
 
 <a href="https://quant-roadmap-portal.vercel.app/">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=58A6FF&center=true&vCenter=true&width=600&lines=Building+Agentic+HFT+Systems;AI-Augmented+Development;Mean+Reversion+on+Nifty;Crafting+Cinematic+Visuals" alt="Typing SVG" />
 </a>
 
-[![Portfolio](https://img.shields.io/badge/Live_Demo-Quant_Roadmap_Portal-238636?style=for-the-badge)](https://quant-roadmap-portal.vercel.app/)
-[![LinkedIn](https://img.shields.io/badge/Connect-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/prince-rajput-672b62279)
+[![Portfolio](https://img.shields.io/badge/Live_Demo-Quant_Roadmap_Portal-238636?style=for-the-badge&logo=vercel&logoColor=white)](https://quant-roadmap-portal.vercel.app/)
+[![LinkedIn](https://img.shields.io/badge/Connect-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/prince-rajput-672b62279)
+[![Instagram](https://img.shields.io/badge/Follow-Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/_ssup.prince_)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:parmbeersingh206@gmail.com)
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=cod-x-prince&label=Profile%20Views&countColor=%23263759&style=for-the-badge)](https://github.com/cod-x-prince)
 
 *“If not now, then never. Everything is not as good or as bad as it seems.”*
 
@@ -58,30 +61,42 @@ I am a 19-year-old **Artificial Intelligence & Machine Learning** student at **C
 
 ---
 
+## 📌 Featured Projects
+
+| Project | Description | Stack | Links |
+|--------|-------------|-------|-------|
+| **Quant Trading Roadmap Portal** | A structured, interactive dashboard to track progress through a professional quant finance curriculum. | React, TypeScript, Vite, Recharts | [Live](https://quant-roadmap-portal.vercel.app/) \| [Repo](https://github.com/cod-x-prince/quant-roadmap-portal) |
+| **Mean Reversion on Nifty** *(WIP)* | Backtesting & live simulation of mean-reversion strategies using Nifty 50 data. | Python, Pandas, NumPy, Backtrader | (private repo) |
+| **AI-Augmented Dev Workflows** | Experimentation with LLM-based code generation and autonomous agents for rapid prototyping. | Python, LangChain, OpenAI API | (coming soon) |
+
+---
+
 ## 📊 Telemetry & Performance
 
 <div align="center">
 
-<a href="https://github.com/cod-x-prince">
-  <img src="https://github-readme-stats.vercel.app/api?username=cod-x-prince&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" width="48%" />
-</a>
-<a href="https://github.com/cod-x-prince">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=cod-x-prince&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" width="48%" />
-</a>
+<img src="https://github-readme-stats.vercel.app/api?username=cod-x-prince&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" width="48%" />
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=cod-x-prince&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" width="48%" />
 
 <br/><br/>
 
-<a href="https://github.com/cod-x-prince">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=cod-x-prince&theme=tokyonight&hide_border=true" width="100%" />
-</a>
+<img src="https://github-readme-streak-stats.herokuapp.com?user=cod-x-prince&theme=tokyonight&hide_border=true" width="100%" />
 
 <br/><br/>
 
-<a href="https://github.com/cod-x-prince">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=cod-x-prince&theme=tokyo-night&hide_border=true&area=true" width="100%" />
-</a>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=cod-x-prince&theme=tokyo-night&hide_border=true&area=true" width="100%" />
 
 </div>
+
+---
+
+## 🌱 Currently Learning & Collaboration Interests
+
+- **Quantitative Finance:** Advanced time-series analysis, order book dynamics, HFT system design.
+- **ML/AI:** Reinforcement learning for trading, transformer models for financial forecasting.
+- **Open Source:** Seeking collaborators for quant-related Python libraries or AI tooling.
+- **Creative:** Always open to video editing/design collaborations.
 
 ---
 
@@ -92,5 +107,6 @@ I am a 19-year-old **Artificial Intelligence & Machine Learning** student at **C
 [![Email](https://img.shields.io/badge/parmbeersingh206@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:parmbeersingh206@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/prince-rajput-672b62279)
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/_ssup.prince_)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/cod-x-prince)
 
 </div>
