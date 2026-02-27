@@ -62,17 +62,23 @@ I am a 19-year-old **Artificial Intelligence & Machine Learning** student at **C
 
 <div align="center">
 
-<a href="https://github.com/code-x-prince">
-  <img src="https://github-readme-stats.vercel.app/api?username=code-x-prince&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" width="48%" />
+<a href="https://github.com/cod-x-prince">
+  <img src="https://github-readme-stats.vercel.app/api?username=cod-x-prince&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" width="48%" />
 </a>
-<a href="https://github.com/code-x-prince">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=code-x-prince&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" width="48%" />
+<a href="https://github.com/cod-x-prince">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=cod-x-prince&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" width="48%" />
 </a>
 
 <br/><br/>
 
-<a href="https://github.com/code-x-prince">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=code-x-prince&theme=tokyo-night&hide_border=true&area=true" width="100%" />
+<a href="https://github.com/cod-x-prince">
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=cod-x-prince&theme=tokyonight&hide_border=true" width="100%" />
+</a>
+
+<br/><br/>
+
+<a href="https://github.com/cod-x-prince">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=cod-x-prince&theme=tokyo-night&hide_border=true&area=true" width="100%" />
 </a>
 
 </div>
