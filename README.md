@@ -70,25 +70,25 @@ let prince = Developer {
 
 <!-- Sub-labels — Poppins 14px [22 ÷ φ ≈ 14] -->
 
-**`Systems & Core`**
+<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=700&size=14&pause=99999&color=8b949e&center=true&vCenter=true&width=220&lines=Systems+%26+Core" alt="Systems & Core"/>
 
 [![Skills](https://skillicons.dev/icons?i=rust,c,java,py&theme=dark)](https://skillicons.dev)
 
 <br/>
 
-**`Web & Frontend`**
+<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=700&size=14&pause=99999&color=8b949e&center=true&vCenter=true&width=220&lines=Web+%26+Frontend" alt="Web & Frontend"/>
 
 [![Skills](https://skillicons.dev/icons?i=ts,js,react,vite,html,css&theme=dark)](https://skillicons.dev)
 
 <br/>
 
-**`Data, AI & Tools`**
+<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=700&size=14&pause=99999&color=8b949e&center=true&vCenter=true&width=220&lines=Data%2C+AI+%26+Tools" alt="Data, AI & Tools"/>
 
 [![Skills](https://skillicons.dev/icons?i=pytorch,tensorflow,git,github,vercel,vscode&theme=dark)](https://skillicons.dev)
 
 <br/>
 
-**`Creative Suite`**
+<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=700&size=14&pause=99999&color=8b949e&center=true&vCenter=true&width=220&lines=Creative+Suite" alt="Creative Suite"/>
 
 [![Skills](https://skillicons.dev/icons?i=ps,pr,ae&theme=dark)](https://skillicons.dev)
 &nbsp;
