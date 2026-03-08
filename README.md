@@ -30,7 +30,7 @@
 
 <!-- ════════ SECTION BANNERS — Helvetica 22px ════════ -->
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,100:161b22&height=48&text=%F0%9F%A7%AC%20%20ABOUT%20ME&fontSize=22&fontFamily=Helvetica,Arial,sans-serif&fontColor=58A6FF&fontAlign=4&fontAlignY=65" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,100:161b22&height=48&text=%F0%9F%A7%AC%20%20ABOUT%20ME&fontSize=22&fontFamily=Helvetica,Arial,sans-serif&fontColor=58A6FF&fontAlign=50&fontAlignY=65" width="100%"/>
 
 <br/>
 
@@ -62,7 +62,7 @@ let prince = Developer {
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,100:161b22&height=48&text=%F0%9F%9B%A0%EF%B8%8F%20%20TECH%20ARSENAL&fontSize=22&fontFamily=Helvetica,Arial,sans-serif&fontColor=58A6FF&fontAlign=4&fontAlignY=65" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,100:161b22&height=48&text=%F0%9F%9B%A0%EF%B8%8F%20%20TECH%20ARSENAL&fontSize=22&fontFamily=Helvetica,Arial,sans-serif&fontColor=58A6FF&fontAlign=50&fontAlignY=65" width="100%"/>
 
 <br/>
 
@@ -101,7 +101,7 @@ let prince = Developer {
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,100:161b22&height=48&text=%F0%9F%9A%80%20%20FEATURED%20PROJECTS&fontSize=22&fontFamily=Helvetica,Arial,sans-serif&fontColor=58A6FF&fontAlign=4&fontAlignY=65" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,100:161b22&height=48&text=%F0%9F%9A%80%20%20FEATURED%20PROJECTS&fontSize=22&fontFamily=Helvetica,Arial,sans-serif&fontColor=58A6FF&fontAlign=50&fontAlignY=65" width="100%"/>
 
 <br/>
 
@@ -156,21 +156,17 @@ let prince = Developer {
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,100:161b22&height=48&text=%E2%8F%B1%EF%B8%8F%20%20CODING%20ACTIVITY&fontSize=22&fontFamily=Helvetica,Arial,sans-serif&fontColor=58A6FF&fontAlign=4&fontAlignY=65" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,100:161b22&height=48&text=%E2%8F%B1%EF%B8%8F%20%20CODING%20ACTIVITY&fontSize=22&fontFamily=Helvetica,Arial,sans-serif&fontColor=58A6FF&fontAlign=50&fontAlignY=65" width="100%"/>
 
 <br/>
 
 <div align="center">
 
-<!-- 
-  ACTIVATE WAKATIME — see Setup Guide section below.
-  Once set up, replace this badge block with the img card.
--->
+![Coding Activity](https://img.shields.io/badge/WakaTime-Tracking%20Started-58A6FF?style=for-the-badge&logo=wakatime&logoColor=white)
 
-<br/>
+<br/><br/>
 
-<img src="https://github-readme-stats.vercel.app/api/wakatime?username=prince_12&theme=github_dark&hide_border=true&title_color=58A6FF&text_color=c9d1d9&bg_color=0d1117&layout=compact&langs_count=7&custom_title=Weekly%20Coding%20Breakdown" width="65%"/>
-
+_⏳ Live coding stats will appear here after 7 days of VS Code + WakaTime tracking_
 
 </div>
 
@@ -178,7 +174,7 @@ let prince = Developer {
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,100:161b22&height=48&text=%F0%9F%93%8A%20%20GITHUB%20STATS&fontSize=22&fontFamily=Helvetica,Arial,sans-serif&fontColor=58A6FF&fontAlign=4&fontAlignY=65" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,100:161b22&height=48&text=%F0%9F%93%8A%20%20GITHUB%20STATS&fontSize=22&fontFamily=Helvetica,Arial,sans-serif&fontColor=58A6FF&fontAlign=50&fontAlignY=65" width="100%"/>
 
 <br/>
 
@@ -202,7 +198,7 @@ let prince = Developer {
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,100:161b22&height=48&text=%F0%9F%93%88%20%20CONTRIBUTION%20GRAPH&fontSize=22&fontFamily=Helvetica,Arial,sans-serif&fontColor=58A6FF&fontAlign=4&fontAlignY=65" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,100:161b22&height=48&text=%F0%9F%93%88%20%20CONTRIBUTION%20GRAPH&fontSize=22&fontFamily=Helvetica,Arial,sans-serif&fontColor=58A6FF&fontAlign=50&fontAlignY=65" width="100%"/>
 
 <br/>
 
@@ -212,7 +208,7 @@ let prince = Developer {
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,100:161b22&height=48&text=%F0%9F%90%8D%20%20CONTRIBUTION%20SNAKE&fontSize=22&fontFamily=Helvetica,Arial,sans-serif&fontColor=58A6FF&fontAlign=4&fontAlignY=65" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,100:161b22&height=48&text=%F0%9F%90%8D%20%20CONTRIBUTION%20SNAKE&fontSize=22&fontFamily=Helvetica,Arial,sans-serif&fontColor=58A6FF&fontAlign=50&fontAlignY=65" width="100%"/>
 
 <br/>
 
@@ -228,7 +224,7 @@ let prince = Developer {
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,100:161b22&height=48&text=%F0%9F%93%9A%20%20WHAT%20I%27M%20LEARNING&fontSize=22&fontFamily=Helvetica,Arial,sans-serif&fontColor=58A6FF&fontAlign=4&fontAlignY=65" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,100:161b22&height=48&text=%F0%9F%93%9A%20%20WHAT%20I%27M%20LEARNING&fontSize=22&fontFamily=Helvetica,Arial,sans-serif&fontColor=58A6FF&fontAlign=50&fontAlignY=65" width="100%"/>
 
 <br/>
 
@@ -249,7 +245,7 @@ let prince = Developer {
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,100:161b22&height=48&text=%F0%9F%A4%9D%20%20LET%27S%20CONNECT&fontSize=22&fontFamily=Helvetica,Arial,sans-serif&fontColor=58A6FF&fontAlign=4&fontAlignY=65" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,100:161b22&height=48&text=%F0%9F%A4%9D%20%20LET%27S%20CONNECT&fontSize=22&fontFamily=Helvetica,Arial,sans-serif&fontColor=58A6FF&fontAlign=50&fontAlignY=65" width="100%"/>
 
 <br/>
 
