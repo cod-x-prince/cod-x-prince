@@ -5,7 +5,7 @@
 -->
 
 <!-- ════════ HERO — Helvetica 52px · Poppins 32px ════════ -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=230&section=header&text=Parmbeer%20Singh&fontSize=52&fontFamily=Helvetica,Arial,sans-serif&fontColor=ffffff&fontAlignY=42&desc=Vibe%20Coder%20%E2%80%A2%20AIML%20%E2%80%A2%20Visual%20Architect&descAlignY=63&descSize=32&descColor=a8bfd0&animation=twinkling" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=230&section=header&text=Parmbeer%20Singh&fontSize=52&fontFamily=Helvetica,Arial,sans-serif&fontColor=ffffff&fontAlignY=42&desc=Vibe%20Coder%20%E2%80%A2%20AIML%20%E2%80%A2%20Visual%20Architect&descAlignY=63&descSize=32&descColor=%23a8bfd0&animation=twinkling" width="100%"/>
 
 <br/>
 
@@ -56,7 +56,9 @@ let prince = Developer {
 
     ask_me_about: ["Vibe coding", "Quant finance", "Rust internals", "Next.js App Router"],
     fun_fact:     "I write market data pipelines faster than most people read them.",
-    weekly_hours: "5h 53m last week — all on pglife 🔥",
+    total_tracked: "6 hrs 50 mins since Mar 7 2026",
+    daily_average:  "1 hr 8 mins",
+    top_language:   "TypeScript 25.88% — 1 hr 54 mins",
 };
 ```
 
@@ -152,6 +154,8 @@ let prince = Developer {
       </p>
       🟡 Building
     </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <h3>📊 Quant Roadmap Portal</h3>
       <p>Interactive quant finance curriculum tracker with progress metrics, structured learning paths, and resource linking for aspiring quants.</p>
@@ -161,6 +165,16 @@ let prince = Developer {
         <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white"/>
       </p>
       <a href="https://quant-roadmap-portal.vercel.app/">→ Live Demo</a> &nbsp; ✅ Shipped
+    </td>
+    <td width="50%" valign="top">
+      <h3>🧠 hemavision-ai</h3>
+      <p>Chest X-ray pathology detection using deep learning — PyTorch + OpenCV pipeline, trained on medical imaging datasets. Early-stage research project.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white"/>
+        <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white"/>
+        <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white"/>
+      </p>
+      🔬 Research
     </td>
   </tr>
 </table>
@@ -175,23 +189,28 @@ let prince = Developer {
 
 <div align="center">
 
-[![wakatime](https://wakatime.com/badge/user/codxprince.svg?style=for-the-badge)](https://wakatime.com/@codxprince)
+<!-- ⚙️ REQUIRED: wakatime.com/settings/account → "Display coding activity publicly" → ON -->
 
-<br/>
+<!-- Badge via shields.io — uses WakaTime API, always works with public profile -->
+[![wakatime](https://wakatime.com/badge/user/4b43bf0e-7149-40b8-928c-6d24d29e3bac.svg?style=for-the-badge)](https://wakatime.com/@codxprince)
 
-[![WakaTime Stats](https://github-readme-stats.vercel.app/api/wakatime?username=codxprince&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58A6FF&text_color=c9d1d9&icon_color=58A6FF&layout=compact&langs_count=8&custom_title=Last+7+Days+Coding+Activity)](https://wakatime.com/@codxprince)
+<br/><br/>
 
-<br/>
+<!-- Live language breakdown — updates daily, real data -->
+<a href="https://wakatime.com/@codxprince">
+  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=codxprince&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58A6FF&text_color=c9d1d9&icon_color=58A6FF&layout=compact&langs_count=8&custom_title=Last+7+Days+%E2%80%94+Live+Coding+Stats&card_width=500" width="500" alt="WakaTime Stats"/>
+</a>
 
-<!-- Last reported week: Mar 9–15 2026 -->
-| 📊 Metric | Value |
-|:---|:---|
-| ⏱ **Total (last 7d)** | **5 hrs 53 mins** |
-| 📅 Daily Average | 1 hr 28 mins |
-| 🏆 Top Language | TypeScript (1h 42m) |
-| 🔥 Top Project | pglife (5h 49m) |
-| 💻 Editor | Antigravity IDE |
-| 🖥 Machine | VALORMUSK · Windows |
+<br/><br/>
+
+<!-- ──────────────────────────────────────────────────────────────────────
+     WEEKLY CHART — get YOUR real URL in 30 seconds:
+     1. Go to wakatime.com/@codxprince
+     2. Click the "Share" button on any chart
+     3. Copy the embed image URL (ends in .svg)
+     4. Replace the img src below with that URL
+     Until then this section is hidden.
+─────────────────────────────────────────────────────────────────────── -->
 
 </div>
 
@@ -243,6 +262,13 @@ let prince = Developer {
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/cod-x-prince/cod-x-prince/output/github-snake.svg"/>
   <img alt="github-snake" src="https://raw.githubusercontent.com/cod-x-prince/cod-x-prince/output/github-snake-dark.svg"/>
 </picture>
+
+<br/>
+
+<!-- ⚠️ SETUP REQUIRED: Snake needs a GitHub Action to generate the SVG files.
+     Create file: .github/workflows/snake.yml in your cod-x-prince/cod-x-prince repo
+     Contents are in the SETUP_GUIDE.md included with this README. -->
+
 </div>
 
 <br/>
