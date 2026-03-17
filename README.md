@@ -43,7 +43,7 @@ let prince = Developer {
 
     currently_building: [
         "pglife       →  Full-stack PG accommodation marketplace  (Next.js 14 + Supabase)",
-        "xauusd-v3    →  Professional XAU/USD terminal  (Tauri + Rust + Canvas)",
+        "xauusd-v3    →  XAU/USD terminal  (Tauri + Rust + Canvas) — maintenance mode",
         "rust-fetcher →  SIMD-optimized ultra-low-latency market data pipeline",
         "geo-intel    →  Geopolitical intelligence dashboard + signal overlays",
     ],
@@ -54,7 +54,7 @@ let prince = Developer {
         "Personal Finance & Investment Strategy",
     ],
 
-    ask_me_about: ["Vibe coding", "Quant finance", "Rust internals", "Next.js App Router"],
+    ask_me_about: ["Vibe coding", "Video editing"],
     fun_fact:     "I write market data pipelines faster than most people read them.",
     total_tracked: "6 hrs 50 mins since Mar 7 2026",
     daily_average:  "1 hr 8 mins",
