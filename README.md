@@ -42,6 +42,7 @@ let prince = Developer {
     education: "B.E. Artificial Intelligence & ML  —  CMRIT '28",
 
     currently_building: [
+        "pglife       →  Full-stack PG accommodation marketplace  (Next.js 14 + Supabase)",
         "xauusd-v3    →  Professional XAU/USD terminal  (Tauri + Rust + Canvas)",
         "rust-fetcher →  SIMD-optimized ultra-low-latency market data pipeline",
         "geo-intel    →  Geopolitical intelligence dashboard + signal overlays",
@@ -49,12 +50,13 @@ let prince = Developer {
 
     deeply_into: [
         "Quantitative Finance & Algorithmic Trading",
+        "Full-stack product engineering — shipping real products for real users",
         "Personal Finance & Investment Strategy",
-        "Cinematic video editing & DaVinci Resolve motion design",
     ],
 
-    ask_me_about: ["Vibe coding", "Quant finance", "Rust internals", "Talking-head editing"],
+    ask_me_about: ["Vibe coding", "Quant finance", "Rust internals", "Next.js App Router"],
     fun_fact:     "I write market data pipelines faster than most people read them.",
+    weekly_hours: "5h 53m last week — all on pglife 🔥",
 };
 ```
 
@@ -130,6 +132,17 @@ let prince = Developer {
   </tr>
   <tr>
     <td width="50%" valign="top">
+      <h3>🏠 PGLife</h3>
+      <p>Full-stack two-sided PG accommodation marketplace — owner listing wizard, Razorpay payments, Cloudinary media, NextAuth v4. Built for real users in Bangalore.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Next.js%2014-000000?style=flat-square&logo=nextdotjs&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Razorpay-02042B?style=flat-square&logo=razorpay&logoColor=white"/>
+      </p>
+      <img src="https://img.shields.io/badge/5h%2049m%20last%20week-238636?style=flat-square&logo=wakatime&logoColor=white"/> &nbsp; 🔥 Shipping
+    </td>
+    <td width="50%" valign="top">
       <h3>🌍 Geo-Intel Dashboard</h3>
       <p>SATINT-framed multi-asset intelligence system — institutional flow analysis, geopolitical signal overlays, Telegram push alerts, 3-tier product architecture.</p>
       <p>
@@ -162,11 +175,23 @@ let prince = Developer {
 
 <div align="center">
 
-![Coding Activity](https://img.shields.io/badge/WakaTime-Tracking%20Started-58A6FF?style=for-the-badge&logo=wakatime&logoColor=white)
+[![wakatime](https://wakatime.com/badge/user/codxprince.svg?style=for-the-badge)](https://wakatime.com/@codxprince)
 
-<br/><br/>
+<br/>
 
-_⏳ Live coding stats will appear here after 7 days of VS Code + WakaTime tracking_
+[![WakaTime Stats](https://github-readme-stats.vercel.app/api/wakatime?username=codxprince&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58A6FF&text_color=c9d1d9&icon_color=58A6FF&layout=compact&langs_count=8&custom_title=Last+7+Days+Coding+Activity)](https://wakatime.com/@codxprince)
+
+<br/>
+
+<!-- Last reported week: Mar 9–15 2026 -->
+| 📊 Metric | Value |
+|:---|:---|
+| ⏱ **Total (last 7d)** | **5 hrs 53 mins** |
+| 📅 Daily Average | 1 hr 28 mins |
+| 🏆 Top Language | TypeScript (1h 42m) |
+| 🔥 Top Project | pglife (5h 49m) |
+| 💻 Editor | Antigravity IDE |
+| 🖥 Machine | VALORMUSK · Windows |
 
 </div>
 
