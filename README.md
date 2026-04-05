@@ -42,9 +42,10 @@ let prince = Developer {
     education: "B.E. Artificial Intelligence & ML  —  CMRIT '28",
 
     currently_building: [
-        "pglife       →  Full-stack PG accommodation marketplace  (Next.js 14 + Supabase)",
-        "xauusd-v3    →  XAU/USD terminal  (Tauri + Rust + Canvas) — maintenance mode",
+        "gharam       →  PG accommodation marketplace — rebranded, deploying soon  (Next.js 14 + Supabase)",
+        "fast-fetcher →  Ultra-low-latency market data fetcher  (Rust + Turbo Mode) — maintenance",
         "rust-fetcher →  SIMD-optimized ultra-low-latency market data pipeline",
+        "ozen         →  Near-invisible OS AI layer  (Electron + React + Ollama)",
         "geo-intel    →  Geopolitical intelligence dashboard + signal overlays",
     ],
 
@@ -56,7 +57,7 @@ let prince = Developer {
 
     ask_me_about: ["Vibe coding", "Video editing"],
     fun_fact:     "I write market data pipelines faster than most people read them.",
-    total_tracked: "6 hrs 50 mins since Mar 7 2026",
+    total_tracked: "18 hrs 11 mins since Mar 7 2026",
     daily_average:  "1 hr 8 mins",
     top_language:   "TypeScript 25.88% — 1 hr 54 mins",
 };
@@ -109,17 +110,18 @@ let prince = Developer {
 
 <br/>
 
+<!-- AUTO-PROJECTS:START -->
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>⚡ xauusd-v3</h3>
-      <p>Professional XAU/USD trading terminal — terminal-aesthetic UI, multi-timeframe historical candle caching, and candlestick pattern detection engine.</p>
+      <h3>⚡ Fast Market Data Fetcher</h3>
+      <p>Ultra-low-latency XAU/USD market data fetcher built in Rust — powered by Turbo Mode for OS-level performance tuning, SIMD vectorization, and CPU core pinning.</p>
       <p>
         <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white"/>
         <img src="https://img.shields.io/badge/Tauri-24C8D8?style=flat-square&logo=tauri&logoColor=white"/>
         <img src="https://img.shields.io/badge/Canvas_API-F7DF1E?style=flat-square&logo=html5&logoColor=black"/>
       </p>
-      <img src="https://img.shields.io/badge/v4.1.0-238636?style=flat-square"/> &nbsp; 🟢 Active
+      <img src="https://img.shields.io/badge/Turbo%20Mode-FF4500?style=flat-square&logo=rust&logoColor=white"/> &nbsp; 🔧 Maintenance
     </td>
     <td width="50%" valign="top">
       <h3>🦀 xauusd-fetcher</h3>
@@ -134,8 +136,8 @@ let prince = Developer {
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>🏠 PGLife</h3>
-      <p>Full-stack two-sided PG accommodation marketplace — owner listing wizard, Razorpay payments, Cloudinary media, NextAuth v4. Built for real users in Bangalore.</p>
+      <h3>🏠 Gharam</h3>
+      <p>Full-stack PG accommodation marketplace — owner listing wizard, Razorpay payments, Cloudinary media, NextAuth v4. Rebranded and deploying for real users in Bangalore.</p>
       <p>
         <img src="https://img.shields.io/badge/Next.js%2014-000000?style=flat-square&logo=nextdotjs&logoColor=white"/>
         <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white"/>
@@ -167,17 +169,19 @@ let prince = Developer {
       <a href="https://quant-roadmap-portal.vercel.app/">→ Live Demo</a> &nbsp; ✅ Shipped
     </td>
     <td width="50%" valign="top">
-      <h3>🧠 hemavision-ai</h3>
-      <p>Chest X-ray pathology detection using deep learning — PyTorch + OpenCV pipeline, trained on medical imaging datasets. Early-stage research project.</p>
+      <h3>🌊 Ozen</h3>
+      <p>Near-invisible OS layer for local AI intelligence — summon AI anywhere by typing <code>@ozen</code>, spawns at cursor position, persistent semantic memory via Membrain knowledge graph. Local-first with Ollama, Groq fallback.</p>
       <p>
-        <img src="https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white"/>
-        <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white"/>
-        <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Electron-47848F?style=flat-square&logo=electron&logoColor=white"/>
+        <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
+        <img src="https://img.shields.io/badge/Tailwind-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Ollama-FF69B4?style=flat-square&logoColor=white"/>
       </p>
-      🔬 Research
+      🔥 Building
     </td>
   </tr>
 </table>
+<!-- AUTO-PROJECTS:END -->
 
 <br/>
 
@@ -196,10 +200,21 @@ let prince = Developer {
 
 <br/><br/>
 
-<!-- Live language breakdown — updates daily, real data -->
+<!-- Live language breakdown — two fallback sources for reliability -->
 <a href="https://wakatime.com/@codxprince">
-  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=codxprince&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58A6FF&text_color=c9d1d9&icon_color=58A6FF&layout=compact&langs_count=8&custom_title=Last+7+Days+%E2%80%94+Live+Coding+Stats&card_width=500" width="500" alt="WakaTime Stats"/>
+  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=codxprince&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58A6FF&text_color=c9d1d9&icon_color=58A6FF&layout=compact&langs_count=8&custom_title=Last+7+Days+%E2%80%94+Live+Coding+Stats&card_width=500&v=2" width="500" alt="WakaTime Stats"/>
 </a>
+
+<br/>
+
+<!-- Fallback: WakaTime native embed — works independently of github-readme-stats -->
+<a href="https://wakatime.com/@codxprince">
+  <img src="https://wakatime.com/share/@codxprince/e0a8ce1e-0000-0000-0000-000000000000.svg" width="500" alt="WakaTime Language Chart"
+    onerror="this.style.display='none'"/>
+</a>
+
+<!-- ⚠️ Replace the UUID above with your real share URL:
+     wakatime.com/@codxprince → Share → Languages chart → copy .svg URL -->
 
 <br/><br/>
 
