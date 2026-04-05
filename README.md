@@ -114,71 +114,69 @@ let prince = Developer {
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>⚡ Fast Market Data Fetcher</h3>
-      <p>Ultra-low-latency XAU/USD market data fetcher built in Rust — powered by Turbo Mode for OS-level performance tuning, SIMD vectorization, and CPU core pinning.</p>
-      <p>
-        <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Tauri-24C8D8?style=flat-square&logo=tauri&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Canvas_API-F7DF1E?style=flat-square&logo=html5&logoColor=black"/>
-      </p>
-      <img src="https://img.shields.io/badge/Turbo%20Mode-FF4500?style=flat-square&logo=rust&logoColor=white"/> &nbsp; 🔧 Maintenance
-    </td>
+    <h4><a href="https://github.com/cod-x-prince/pg-app">pg-app</a></h4>
+    <p></p>
+    <p>
+      <img src="https://img.shields.io/badge/TypeScript-555?style=flat-square"/>
+      <img src="https://img.shields.io/badge/commits-100-238636?style=flat-square"/>
+      <img src="https://img.shields.io/github/stars/cod-x-prince/pg-app?style=flat-square&color=58A6FF"/>
+    </p>
+    🟢 Active &nbsp;·&nbsp; Updated 2026-04-01
+  </td>
     <td width="50%" valign="top">
-      <h3>🦀 xauusd-fetcher</h3>
-      <p>Ultra-low-latency XAU/USD market data pipeline — SIMD vectorization, CPU core pinning, RAII-based turbo subsystem for Windows OS-level performance tuning.</p>
-      <p>
-        <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white"/>
-        <img src="https://img.shields.io/badge/WebSocket-010101?style=flat-square&logo=socket.io&logoColor=white"/>
-        <img src="https://img.shields.io/badge/SIMD-555555?style=flat-square&logo=intel&logoColor=white"/>
-      </p>
-      <a href="https://github.com/cod-x-prince/xauusd-fetcher">→ View Repo</a> &nbsp; 🟢 Active
-    </td>
+    <h4><a href="https://github.com/cod-x-prince/omegle_for_student">omegle_for_student</a></h4>
+    <p></p>
+    <p>
+      <img src="https://img.shields.io/badge/JavaScript-555?style=flat-square"/>
+      <img src="https://img.shields.io/badge/commits-21-238636?style=flat-square"/>
+      <img src="https://img.shields.io/github/stars/cod-x-prince/omegle_for_student?style=flat-square&color=58A6FF"/>
+    </p>
+    🟢 Active &nbsp;·&nbsp; Updated 2025-10-04
+  </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>🏠 Gharam</h3>
-      <p>Full-stack PG accommodation marketplace — owner listing wizard, Razorpay payments, Cloudinary media, NextAuth v4. Rebranded and deploying for real users in Bangalore.</p>
-      <p>
-        <img src="https://img.shields.io/badge/Next.js%2014-000000?style=flat-square&logo=nextdotjs&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Razorpay-02042B?style=flat-square&logo=razorpay&logoColor=white"/>
-      </p>
-      <img src="https://img.shields.io/badge/5h%2049m%20last%20week-238636?style=flat-square&logo=wakatime&logoColor=white"/> &nbsp; 🔥 Shipping
-    </td>
+    <h4><a href="https://github.com/cod-x-prince/cod-x-prince">cod-x-prince</a></h4>
+    <p></p>
+    <p>
+      <img src="https://img.shields.io/badge/—-555?style=flat-square"/>
+      <img src="https://img.shields.io/badge/commits-17-238636?style=flat-square"/>
+      <img src="https://img.shields.io/github/stars/cod-x-prince/cod-x-prince?style=flat-square&color=58A6FF"/>
+    </p>
+    👤 Profile &nbsp;·&nbsp; Updated 2026-04-05
+  </td>
     <td width="50%" valign="top">
-      <h3>🌍 Geo-Intel Dashboard</h3>
-      <p>SATINT-framed multi-asset intelligence system — institutional flow analysis, geopolitical signal overlays, Telegram push alerts, 3-tier product architecture.</p>
-      <p>
-        <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
-        <img src="https://img.shields.io/badge/Recharts-22b5bf?style=flat-square"/>
-        <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white"/>
-      </p>
-      🟡 Building
-    </td>
+    <h4><a href="https://github.com/cod-x-prince/video-editing-portfolio">video-editing-portfolio</a></h4>
+    <p></p>
+    <p>
+      <img src="https://img.shields.io/badge/TypeScript-555?style=flat-square"/>
+      <img src="https://img.shields.io/badge/commits-16-238636?style=flat-square"/>
+      <img src="https://img.shields.io/github/stars/cod-x-prince/video-editing-portfolio?style=flat-square&color=58A6FF"/>
+    </p>
+    🟢 Active &nbsp;·&nbsp; Updated 2026-01-19
+  </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>📊 Quant Roadmap Portal</h3>
-      <p>Interactive quant finance curriculum tracker with progress metrics, structured learning paths, and resource linking for aspiring quants.</p>
-      <p>
-        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
-        <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
-        <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white"/>
-      </p>
-      <a href="https://quant-roadmap-portal.vercel.app/">→ Live Demo</a> &nbsp; ✅ Shipped
-    </td>
+    <h4><a href="https://github.com/cod-x-prince/ai_master_detail_generator">ai_master_detail_generator</a></h4>
+    <p></p>
+    <p>
+      <img src="https://img.shields.io/badge/Python-555?style=flat-square"/>
+      <img src="https://img.shields.io/badge/commits-9-238636?style=flat-square"/>
+      <img src="https://img.shields.io/github/stars/cod-x-prince/ai_master_detail_generator?style=flat-square&color=58A6FF"/>
+    </p>
+    🟢 Active &nbsp;·&nbsp; Updated 2025-09-16
+  </td>
     <td width="50%" valign="top">
-      <h3>🌊 Ozen</h3>
-      <p>Near-invisible OS layer for local AI intelligence — summon AI anywhere by typing <code>@ozen</code>, spawns at cursor position, persistent semantic memory via Membrain knowledge graph. Local-first with Ollama, Groq fallback.</p>
-      <p>
-        <img src="https://img.shields.io/badge/Electron-47848F?style=flat-square&logo=electron&logoColor=white"/>
-        <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
-        <img src="https://img.shields.io/badge/Tailwind-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Ollama-FF69B4?style=flat-square&logoColor=white"/>
-      </p>
-      🔥 Building
-    </td>
+    <h4><a href="https://github.com/cod-x-prince/ai-trading-app">ai-trading-app</a></h4>
+    <p>An AI-powered web application that analyzes stock market trends, sentiment, and sector health to provide predictive insights for Indian stocks.</p>
+    <p>
+      <img src="https://img.shields.io/badge/Python-555?style=flat-square"/>
+      <img src="https://img.shields.io/badge/commits-7-238636?style=flat-square"/>
+      <img src="https://img.shields.io/github/stars/cod-x-prince/ai-trading-app?style=flat-square&color=58A6FF"/>
+    </p>
+    🟢 Active &nbsp;·&nbsp; Updated 2025-08-26
+  </td>
   </tr>
 </table>
 <!-- AUTO-PROJECTS:END -->
