@@ -114,69 +114,81 @@ let prince = Developer {
 <table>
   <tr>
     <td width="50%" valign="top">
-    <h4><a href="https://github.com/cod-x-prince/pg-app">pg-app</a></h4>
-    <p></p>
-    <p>
-      <img src="https://img.shields.io/badge/TypeScript-555?style=flat-square"/>
-      <img src="https://img.shields.io/badge/commits-100-238636?style=flat-square"/>
-      <img src="https://img.shields.io/github/stars/cod-x-prince/pg-app?style=flat-square&color=58A6FF"/>
-    </p>
-    🟢 Active &nbsp;·&nbsp; Updated 2026-04-01
-  </td>
+      <h3>🦀 <a href="https://github.com/cod-x-prince/xauusd-fetcher">xauusd-fetcher</a></h3>
+      <p>> A production-grade, sub-millisecond market data feed for **Gold (XAU/USD)** and other instruments, built in **Rust** using async WebSocket streaming.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Rust-555?style=flat-square" alt="Rust"/>
+      </p>
+      <img src="https://img.shields.io/badge/commits-1-238636?style=flat-square"  />
+      &nbsp;
+      <img src="https://img.shields.io/github/stars/cod-x-prince/xauusd-fetcher?style=flat-square&color=58A6FF" />
+      &nbsp; 🔧 Maintenance
+    </td>
     <td width="50%" valign="top">
-    <h4><a href="https://github.com/cod-x-prince/omegle_for_student">omegle_for_student</a></h4>
-    <p></p>
-    <p>
-      <img src="https://img.shields.io/badge/JavaScript-555?style=flat-square"/>
-      <img src="https://img.shields.io/badge/commits-21-238636?style=flat-square"/>
-      <img src="https://img.shields.io/github/stars/cod-x-prince/omegle_for_student?style=flat-square&color=58A6FF"/>
-    </p>
-    🟢 Active &nbsp;·&nbsp; Updated 2025-10-04
-  </td>
+      <h3>📊 <a href="https://github.com/cod-x-prince/finance-roadmap">finance-roadmap</a></h3>
+      <p>An interactive, modular, and performance-optimized portal tracking a comprehensive curriculum in quantitative finance, algorithmic trading, and Python AIML engineering. Built to serve as both a daily study dashboard and …</p>
+      <p>
+        <img src="https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"/>
+        <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React"/>
+        <img src="https://img.shields.io/badge/Vite-B73BFE?style=flat-square&logo=vite&logoColor=FFD62E" alt="Vite"/>
+        <img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white" alt="Vercel"/>
+      </p>
+      <img src="https://img.shields.io/badge/commits-1-238636?style=flat-square"  />
+      &nbsp;
+      <img src="https://img.shields.io/github/stars/cod-x-prince/finance-roadmap?style=flat-square&color=58A6FF" />
+      &nbsp; ✅ Shipped
+    </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-    <h4><a href="https://github.com/cod-x-prince/cod-x-prince">cod-x-prince</a></h4>
-    <p></p>
-    <p>
-      <img src="https://img.shields.io/badge/—-555?style=flat-square"/>
-      <img src="https://img.shields.io/badge/commits-17-238636?style=flat-square"/>
-      <img src="https://img.shields.io/github/stars/cod-x-prince/cod-x-prince?style=flat-square&color=58A6FF"/>
-    </p>
-    👤 Profile &nbsp;·&nbsp; Updated 2026-04-05
-  </td>
+      <h3>📁 <a href="https://github.com/cod-x-prince/pg-app">pg-app</a></h3>
+      <p>_Verified listings · Zero broker fees · Direct booking · Production-Ready Security_</p>
+      <p>
+        <img src="https://img.shields.io/badge/Next.js-14.2.35-black?style=flat-square&logo=next.js" alt="Next.js"/>
+        <img src="https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat-square&logo=typescript" alt="TypeScript"/>
+        <img src="https://img.shields.io/badge/Prisma-5.22-2D3748?style=flat-square&logo=prisma" alt="Prisma"/>
+        <img src="https://img.shields.io/badge/PostgreSQL-Supabase-3ECF8E?style=flat-square&logo=postgresql" alt="PostgreSQL"/>
+      </p>
+      <img src="https://img.shields.io/badge/commits-100-238636?style=flat-square"  />
+      &nbsp;
+      <img src="https://img.shields.io/github/stars/cod-x-prince/pg-app?style=flat-square&color=58A6FF" />
+      &nbsp; 🟡 Building
+    </td>
     <td width="50%" valign="top">
-    <h4><a href="https://github.com/cod-x-prince/video-editing-portfolio">video-editing-portfolio</a></h4>
-    <p></p>
-    <p>
-      <img src="https://img.shields.io/badge/TypeScript-555?style=flat-square"/>
-      <img src="https://img.shields.io/badge/commits-16-238636?style=flat-square"/>
-      <img src="https://img.shields.io/github/stars/cod-x-prince/video-editing-portfolio?style=flat-square&color=58A6FF"/>
-    </p>
-    🟢 Active &nbsp;·&nbsp; Updated 2026-01-19
-  </td>
+      <h3>📁 <a href="https://github.com/cod-x-prince/omegle_for_student">omegle_for_student</a></h3>
+      <p>Add your project description here.</p>
+      <p>
+        <img src="https://img.shields.io/badge/JavaScript-555?style=flat-square" alt="JavaScript"/>
+      </p>
+      <img src="https://img.shields.io/badge/commits-21-238636?style=flat-square"  />
+      &nbsp;
+      <img src="https://img.shields.io/github/stars/cod-x-prince/omegle_for_student?style=flat-square&color=58A6FF" />
+      &nbsp; 🟢 Active
+    </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-    <h4><a href="https://github.com/cod-x-prince/ai_master_detail_generator">ai_master_detail_generator</a></h4>
-    <p></p>
-    <p>
-      <img src="https://img.shields.io/badge/Python-555?style=flat-square"/>
-      <img src="https://img.shields.io/badge/commits-9-238636?style=flat-square"/>
-      <img src="https://img.shields.io/github/stars/cod-x-prince/ai_master_detail_generator?style=flat-square&color=58A6FF"/>
-    </p>
-    🟢 Active &nbsp;·&nbsp; Updated 2025-09-16
-  </td>
+      <h3>📁 <a href="https://github.com/cod-x-prince/video-editing-portfolio">video-editing-portfolio</a></h3>
+      <p>A **high-performance, cinematic video editing portfolio** built with modern web technologies and an agentic workflow. Designed to showcase **short-form vertical (Instagram Reels–style) edits**, smooth micro-interactions,…</p>
+      <p>
+        <img src="https://img.shields.io/badge/TypeScript-555?style=flat-square" alt="TypeScript"/>
+      </p>
+      <img src="https://img.shields.io/badge/commits-16-238636?style=flat-square"  />
+      &nbsp;
+      <img src="https://img.shields.io/github/stars/cod-x-prince/video-editing-portfolio?style=flat-square&color=58A6FF" />
+      &nbsp; ✅ Live
+    </td>
     <td width="50%" valign="top">
-    <h4><a href="https://github.com/cod-x-prince/ai-trading-app">ai-trading-app</a></h4>
-    <p>An AI-powered web application that analyzes stock market trends, sentiment, and sector health to provide predictive insights for Indian stocks.</p>
-    <p>
-      <img src="https://img.shields.io/badge/Python-555?style=flat-square"/>
-      <img src="https://img.shields.io/badge/commits-7-238636?style=flat-square"/>
-      <img src="https://img.shields.io/github/stars/cod-x-prince/ai-trading-app?style=flat-square&color=58A6FF"/>
-    </p>
-    🟢 Active &nbsp;·&nbsp; Updated 2025-08-26
-  </td>
+      <h3>📁 <a href="https://github.com/cod-x-prince/ai_master_detail_generator">ai_master_detail_generator</a></h3>
+      <p></p>
+      <p>
+        <img src="https://img.shields.io/badge/Python-555?style=flat-square" alt="Python"/>
+      </p>
+      <img src="https://img.shields.io/badge/commits-9-238636?style=flat-square"  />
+      &nbsp;
+      <img src="https://img.shields.io/github/stars/cod-x-prince/ai_master_detail_generator?style=flat-square&color=58A6FF" />
+      &nbsp; 🟢 Active
+    </td>
   </tr>
 </table>
 <!-- AUTO-PROJECTS:END -->
