@@ -114,80 +114,70 @@ let prince = Developer {
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>🦀 <a href="https://github.com/cod-x-prince/xauusd-fetcher">xauusd-fetcher</a></h3>
-      <p>> A production-grade, sub-millisecond market data feed for **Gold (XAU/USD)** and other instruments, built in **Rust** using async WebSocket streaming.</p>
+      <h3>⚡ Fast Market Data Fetcher</h3>
+      <p>Ultra-low-latency XAU/USD market data fetcher built in Rust — powered by Turbo Mode for OS-level performance tuning, SIMD vectorization, and CPU core pinning.</p>
       <p>
-        <img src="https://img.shields.io/badge/Rust-555?style=flat-square" alt="Rust"/>
+        <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Tauri-24C8D8?style=flat-square&logo=tauri&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Canvas_API-F7DF1E?style=flat-square&logo=html5&logoColor=black"/>
       </p>
-      <img src="https://img.shields.io/badge/commits-1-238636?style=flat-square"  />
-      &nbsp;
-      <img src="https://img.shields.io/github/stars/cod-x-prince/xauusd-fetcher?style=flat-square&color=58A6FF" />
-      &nbsp; 🔧 Maintenance
+      <img src="https://img.shields.io/badge/Turbo%20Mode-FF4500?style=flat-square&logo=rust&logoColor=white"/> &nbsp; 🔧 Maintenance
     </td>
     <td width="50%" valign="top">
-      <h3>📊 <a href="https://github.com/cod-x-prince/finance-roadmap">finance-roadmap</a></h3>
-      <p>An interactive, modular, and performance-optimized portal tracking a comprehensive curriculum in quantitative finance, algorithmic trading, and Python AIML engineering. Built to serve as both a daily study dashboard and …</p>
+      <h3>🦀 xauusd-fetcher</h3>
+      <p>Ultra-low-latency XAU/USD market data pipeline — SIMD vectorization, CPU core pinning, RAII-based turbo subsystem for Windows OS-level performance tuning.</p>
       <p>
-        <img src="https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"/>
-        <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React"/>
-        <img src="https://img.shields.io/badge/Vite-B73BFE?style=flat-square&logo=vite&logoColor=FFD62E" alt="Vite"/>
-        <img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white" alt="Vercel"/>
+        <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white"/>
+        <img src="https://img.shields.io/badge/WebSocket-010101?style=flat-square&logo=socket.io&logoColor=white"/>
+        <img src="https://img.shields.io/badge/SIMD-555555?style=flat-square&logo=intel&logoColor=white"/>
       </p>
-      <img src="https://img.shields.io/badge/commits-1-238636?style=flat-square"  />
-      &nbsp;
-      <img src="https://img.shields.io/github/stars/cod-x-prince/finance-roadmap?style=flat-square&color=58A6FF" />
-      &nbsp; ✅ Shipped
+      <a href="https://github.com/cod-x-prince/xauusd-fetcher">→ View Repo</a> &nbsp; 🟢 Active
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>📁 <a href="https://github.com/cod-x-prince/pg-app">pg-app</a></h3>
-      <p>_Verified listings · Zero broker fees · Direct booking · Production-Ready Security_</p>
+      <h3>🏠 Gharam</h3>
+      <p>Full-stack PG accommodation marketplace — owner listing wizard, Razorpay payments, Cloudinary media, NextAuth v4. Rebranded and deploying for real users in Bangalore.</p>
       <p>
-        <img src="https://img.shields.io/badge/Next.js-14.2.35-black?style=flat-square&logo=next.js" alt="Next.js"/>
-        <img src="https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat-square&logo=typescript" alt="TypeScript"/>
-        <img src="https://img.shields.io/badge/Prisma-5.22-2D3748?style=flat-square&logo=prisma" alt="Prisma"/>
-        <img src="https://img.shields.io/badge/PostgreSQL-Supabase-3ECF8E?style=flat-square&logo=postgresql" alt="PostgreSQL"/>
+        <img src="https://img.shields.io/badge/Next.js%2014-000000?style=flat-square&logo=nextdotjs&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Razorpay-02042B?style=flat-square&logo=razorpay&logoColor=white"/>
       </p>
-      <img src="https://img.shields.io/badge/commits-100-238636?style=flat-square"  />
-      &nbsp;
-      <img src="https://img.shields.io/github/stars/cod-x-prince/pg-app?style=flat-square&color=58A6FF" />
-      &nbsp; 🟡 Building
+      <img src="https://img.shields.io/badge/5h%2049m%20last%20week-238636?style=flat-square&logo=wakatime&logoColor=white"/> &nbsp; 🔥 Shipping
     </td>
     <td width="50%" valign="top">
-      <h3>📁 <a href="https://github.com/cod-x-prince/omegle_for_student">omegle_for_student</a></h3>
-      <p>Add your project description here.</p>
+      <h3>🌍 Geo-Intel Dashboard</h3>
+      <p>SATINT-framed multi-asset intelligence system — institutional flow analysis, geopolitical signal overlays, Telegram push alerts, 3-tier product architecture.</p>
       <p>
-        <img src="https://img.shields.io/badge/JavaScript-555?style=flat-square" alt="JavaScript"/>
+        <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
+        <img src="https://img.shields.io/badge/Recharts-22b5bf?style=flat-square"/>
+        <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white"/>
       </p>
-      <img src="https://img.shields.io/badge/commits-21-238636?style=flat-square"  />
-      &nbsp;
-      <img src="https://img.shields.io/github/stars/cod-x-prince/omegle_for_student?style=flat-square&color=58A6FF" />
-      &nbsp; 🟢 Active
+      🟡 Building
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>📁 <a href="https://github.com/cod-x-prince/video-editing-portfolio">video-editing-portfolio</a></h3>
-      <p>A **high-performance, cinematic video editing portfolio** built with modern web technologies and an agentic workflow. Designed to showcase **short-form vertical (Instagram Reels–style) edits**, smooth micro-interactions,…</p>
+      <h3>📊 Quant Roadmap Portal</h3>
+      <p>Interactive quant finance curriculum tracker with progress metrics, structured learning paths, and resource linking for aspiring quants.</p>
       <p>
-        <img src="https://img.shields.io/badge/TypeScript-555?style=flat-square" alt="TypeScript"/>
+        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
+        <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
+        <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white"/>
       </p>
-      <img src="https://img.shields.io/badge/commits-16-238636?style=flat-square"  />
-      &nbsp;
-      <img src="https://img.shields.io/github/stars/cod-x-prince/video-editing-portfolio?style=flat-square&color=58A6FF" />
-      &nbsp; ✅ Live
+      <a href="https://quant-roadmap-portal.vercel.app/">→ Live Demo</a> &nbsp; ✅ Shipped
     </td>
     <td width="50%" valign="top">
-      <h3>📁 <a href="https://github.com/cod-x-prince/ai_master_detail_generator">ai_master_detail_generator</a></h3>
-      <p></p>
+      <h3>🌊 Ozen</h3>
+      <p>Near-invisible OS layer for local AI intelligence — summon AI anywhere by typing <code>@ozen</code>, spawns at cursor position, persistent semantic memory via Membrain knowledge graph. Local-first with Ollama, Groq fallback.</p>
       <p>
-        <img src="https://img.shields.io/badge/Python-555?style=flat-square" alt="Python"/>
+        <img src="https://img.shields.io/badge/Electron-47848F?style=flat-square&logo=electron&logoColor=white"/>
+        <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
+        <img src="https://img.shields.io/badge/Tailwind-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Ollama-FF69B4?style=flat-square&logoColor=white"/>
       </p>
-      <img src="https://img.shields.io/badge/commits-9-238636?style=flat-square"  />
-      &nbsp;
-      <img src="https://img.shields.io/github/stars/cod-x-prince/ai_master_detail_generator?style=flat-square&color=58A6FF" />
-      &nbsp; 🟢 Active
+      🔥 Building
     </td>
   </tr>
 </table>
@@ -203,28 +193,23 @@ let prince = Developer {
 
 <div align="center">
 
-<!-- ⚙️ REQUIRED: wakatime.com/settings/account → "Display coding activity publicly" → ON -->
-
-<!-- Badge via shields.io — uses WakaTime API, always works with public profile -->
+<!-- Badge — real UUID, updates daily -->
 [![wakatime](https://wakatime.com/badge/user/4b43bf0e-7149-40b8-928c-6d24d29e3bac.svg?style=for-the-badge)](https://wakatime.com/@codxprince)
 
 <br/><br/>
 
-<!-- Live language breakdown — two fallback sources for reliability -->
+<!-- ── STEP REQUIRED to unlock the stats card below ────────────────────────
+     1. Go to wakatime.com/settings/account
+     2. Enable "Display languages, editors, OS, and machines publicly"
+     3. Save — the card below will auto-populate within 24 hours
+──────────────────────────────────────────────────────────────────────────── -->
+
+<!-- AUTO-WAKATIME:START -->
+<!-- This SVG is generated daily by .github/workflows/update-readme.yml — never breaks -->
 <a href="https://wakatime.com/@codxprince">
-  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=codxprince&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58A6FF&text_color=c9d1d9&icon_color=58A6FF&layout=compact&langs_count=8&custom_title=Last+7+Days+%E2%80%94+Live+Coding+Stats&card_width=500&v=2" width="500" alt="WakaTime Stats"/>
+  <img src="https://raw.githubusercontent.com/cod-x-prince/cod-x-prince/main/wakatime-stats.svg" width="500" alt="WakaTime Stats"/>
 </a>
-
-<br/>
-
-<!-- Fallback: WakaTime native embed — works independently of github-readme-stats -->
-<a href="https://wakatime.com/@codxprince">
-  <img src="https://wakatime.com/share/@codxprince/e0a8ce1e-0000-0000-0000-000000000000.svg" width="500" alt="WakaTime Language Chart"
-    onerror="this.style.display='none'"/>
-</a>
-
-<!-- ⚠️ Replace the UUID above with your real share URL:
-     wakatime.com/@codxprince → Share → Languages chart → copy .svg URL -->
+<!-- AUTO-WAKATIME:END -->
 
 <br/><br/>
 
