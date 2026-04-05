@@ -1,34 +1,32 @@
 # ─────────────────────────────────────────────────────────────────────────────
-# AUTO-UPDATE README — sorts featured projects by commit count automatically
+# AUTO-UPDATE README — fetches each repo's README.md to build profile cards
 # Save at: .github/workflows/update-readme.yml
-# in your cod-x-prince/cod-x-prince special repository
 # ─────────────────────────────────────────────────────────────────────────────
-# What it does:
-#   1. Runs daily at 2am UTC + on every push to main
-#   2. Fetches commit counts for all your public repos via GitHub API
-#   3. Rewrites the <!-- AUTO-PROJECTS --> block in your README
-#      with repos sorted by most commits (most active = shown first)
-#   4. Commits the update back to main automatically
+# What it does every day at 2am UTC:
+#   1. Fetches all your public repos sorted by commit count
+#   2. For each repo — downloads its actual README.md
+#   3. Extracts: description, shields badges, status emoji, tech stack
+#   4. Builds the projects table from real repo data — not hardcoded text
+#   5. Commits the updated README back automatically
 # ─────────────────────────────────────────────────────────────────────────────
 
-name: Auto-Update README Projects
+name: Auto-Update README from Repos
 
 on:
   schedule:
-    - cron: "0 2 * * *"    # daily at 2am UTC
-  workflow_dispatch:         # manual trigger from Actions tab
+    - cron: "0 2 * * *"
+  workflow_dispatch:
   push:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
     permissions:
-      contents: write        # needed to commit back to repo
+      contents: write
 
     steps:
-      - name: Checkout repo
+      - name: Checkout
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -38,131 +36,252 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install dependencies
+      - name: Install deps
         run: pip install requests
 
-      - name: Fetch repos + update README
+      - name: Fetch repos + parse READMEs + update profile
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: cod-x-prince
         run: |
           python3 << 'PYEOF'
-          import requests, os, re, json
+          import requests, os, re, base64, json
 
           USERNAME = os.environ["GITHUB_USERNAME"]
           TOKEN    = os.environ["GITHUB_TOKEN"]
-          HEADERS  = {"Authorization": f"Bearer {TOKEN}", "Accept": "application/vnd.github+json"}
+          H        = {
+              "Authorization": f"Bearer {TOKEN}",
+              "Accept": "application/vnd.github+json",
+              "X-GitHub-Api-Version": "2022-11-28",
+          }
 
-          # ── Fetch all public repos ──────────────────────────────────────────
-          repos = []
-          page  = 1
-          while True:
-              r = requests.get(
-                  f"https://api.github.com/users/{USERNAME}/repos",
-                  headers=HEADERS,
-                  params={"per_page": 100, "page": page, "type": "owner"}
-              )
-              data = r.json()
-              if not data: break
-              repos.extend(data)
-              page += 1
+          # ── Repos to always pin (in this order if commits are equal) ────────
+          PINNED_ORDER = [
+              "gharam", "ozen", "xauusd-fetcher",
+              "finance-roadmap", "geo-intel", "hemavision-ai",
+          ]
 
-          # ── Fetch commit count for each repo ───────────────────────────────
-          def get_commits(repo_name):
-              r = requests.get(
-                  f"https://api.github.com/repos/{USERNAME}/{repo_name}/commits",
-                  headers=HEADERS,
-                  params={"per_page": 1}
-              )
-              # GitHub returns total in Link header
-              link = r.headers.get("Link", "")
-              if 'rel="last"' in link:
-                  last_url = [x.split(";")[0].strip("<>") for x in link.split(",") if 'rel="last"' in x][0]
-                  return int(last_url.split("page=")[-1])
-              return len(r.json()) if isinstance(r.json(), list) else 0
-
-          repo_stats = []
-          for repo in repos:
-              if repo["fork"]: continue   # skip forks
-              commits = get_commits(repo["name"])
-              repo_stats.append({
-                  "name":        repo["name"],
-                  "description": repo["description"] or "",
-                  "url":         repo["html_url"],
-                  "stars":       repo["stargazers_count"],
-                  "language":    repo["language"] or "—",
-                  "commits":     commits,
-                  "updated":     repo["updated_at"][:10],
-              })
-
-          # Sort by commits descending
-          repo_stats.sort(key=lambda x: x["commits"], reverse=True)
-          top = repo_stats[:6]
-
-          # ── Build the auto-projects table ──────────────────────────────────
-          STATUS_HINTS = {
-              "cod-x-prince":   "👤 Profile",
+          # ── Status overrides (repo_name → status string) ────────────────────
+          STATUS = {
               "gharam":         "🔥 Shipping",
               "ozen":           "🔥 Building",
               "xauusd-fetcher": "🔧 Maintenance",
+              "xauusd-v3":      "🔧 Maintenance",
               "finance-roadmap":"✅ Shipped",
               "geo-intel":      "🟡 Building",
               "hemavision-ai":  "🔬 Research",
+              "rust-fetcher":   "🔧 Maintenance",
           }
 
-          rows = ""
-          for i in range(0, len(top), 2):
-              rows += "  <tr>\n"
-              for repo in top[i:i+2]:
-                  name   = repo["name"]
-                  status = STATUS_HINTS.get(name.lower(), "🟢 Active")
-                  rows += f'''    <td width="50%" valign="top">
-              <h4><a href="{repo["url"]}">{name}</a></h4>
-              <p>{repo["description"]}</p>
-              <p>
-                <img src="https://img.shields.io/badge/{repo["language"].replace(" ","%20")}-555?style=flat-square"/>
-                <img src="https://img.shields.io/badge/commits-{repo["commits"]}-238636?style=flat-square"/>
-                <img src="https://img.shields.io/github/stars/{USERNAME}/{name}?style=flat-square&color=58A6FF"/>
-              </p>
-              {status} &nbsp;·&nbsp; Updated {repo["updated"]}
-            </td>\n'''
-              rows += "  </tr>\n"
+          # ── Icon overrides ───────────────────────────────────────────────────
+          ICON = {
+              "gharam":         "🏠",
+              "ozen":           "🌊",
+              "xauusd-fetcher": "🦀",
+              "xauusd-v3":      "⚡",
+              "finance-roadmap":"📊",
+              "geo-intel":      "🌍",
+              "hemavision-ai":  "🧠",
+          }
+
+          # ── Fetch all public repos ───────────────────────────────────────────
+          repos, page = [], 1
+          while True:
+              r = requests.get(
+                  f"https://api.github.com/users/{USERNAME}/repos",
+                  headers=H,
+                  params={"per_page": 100, "page": page, "type": "owner"}
+              )
+              data = r.json()
+              if not data or not isinstance(data, list): break
+              repos.extend(data)
+              page += 1
+
+          # ── Get commit count ─────────────────────────────────────────────────
+          def commit_count(name):
+              r = requests.get(
+                  f"https://api.github.com/repos/{USERNAME}/{name}/commits",
+                  headers=H, params={"per_page": 1}
+              )
+              link = r.headers.get("Link", "")
+              if 'rel="last"' in link:
+                  return int([x.split(";")[0].strip("<>") for x in link.split(",") if 'rel="last"' in x][0].split("page=")[-1])
+              body = r.json()
+              return len(body) if isinstance(body, list) else 0
+
+          # ── Fetch + parse repo README ────────────────────────────────────────
+          def fetch_readme(name):
+              r = requests.get(
+                  f"https://api.github.com/repos/{USERNAME}/{name}/contents/README.md",
+                  headers=H
+              )
+              if r.status_code != 200:
+                  return ""
+              content = r.json().get("content", "")
+              try:
+                  return base64.b64decode(content).decode("utf-8", errors="ignore")
+              except Exception:
+                  return ""
+
+          def extract_first_paragraph(readme):
+              """Extract first meaningful paragraph that isn't a heading or badge line."""
+              lines = readme.splitlines()
+              para = []
+              for line in lines:
+                  stripped = line.strip()
+                  if not stripped: 
+                      if para: break
+                      continue
+                  # Skip headings, badge lines, HTML image tags, shield links
+                  if stripped.startswith("#"): continue
+                  if "img.shields.io" in stripped: continue
+                  if stripped.startswith("<img"): continue
+                  if stripped.startswith("[!["): continue
+                  if stripped.startswith("![") and "badge" in stripped.lower(): continue
+                  if stripped.startswith("|"): continue
+                  if stripped.startswith("<div"): continue
+                  if stripped.startswith("<"): continue
+                  para.append(stripped)
+              return " ".join(para[:3]).strip()
+
+          def extract_badges(readme):
+              """Pull img.shields.io badge URLs from the README."""
+              # Match markdown badge syntax: ![label](url)
+              pattern = r'!\[([^\]]*)\]\((https://img\.shields\.io/badge/[^)]+)\)'
+              matches = re.findall(pattern, readme)
+              badges = []
+              for label, url in matches[:4]:   # max 4 badges
+                  # Clean up URL — ensure flat-square style
+                  url = re.sub(r'style=[^&?]+', 'style=flat-square', url)
+                  badges.append((label or url.split("/badge/")[1].split("-")[0], url))
+              return badges
+
+          def extract_language_badges(readme, repo_language):
+              """Try to extract tech stack from README badges, fall back to repo language."""
+              badges = extract_badges(readme)
+              if badges:
+                  return badges
+              # Fallback: build one badge from the repo's primary language
+              if repo_language:
+                  lang = repo_language.replace(" ", "%20")
+                  return [(repo_language, f"https://img.shields.io/badge/{lang}-555?style=flat-square")]
+              return []
+
+          def extract_status_emoji(readme):
+              """Look for status keywords in the README."""
+              lower = readme.lower()
+              if any(w in lower for w in ["shipping", "deploying", "launching"]):
+                  return "🔥 Shipping"
+              if any(w in lower for w in ["wip", "building", "in progress", "development"]):
+                  return "🟡 Building"
+              if any(w in lower for w in ["stable", "production", "live", "released"]):
+                  return "✅ Live"
+              if any(w in lower for w in ["research", "experimental", "early"]):
+                  return "🔬 Research"
+              if any(w in lower for w in ["maintenance", "legacy", "archived"]):
+                  return "🔧 Maintenance"
+              return "🟢 Active"
+
+          # ── Build repo data ──────────────────────────────────────────────────
+          print("Fetching repo data...")
+          repo_data = []
+          for repo in repos:
+              if repo["fork"] or repo["name"] == USERNAME: continue
+              name    = repo["name"]
+              commits = commit_count(name)
+              readme  = fetch_readme(name)
+
+              desc    = extract_first_paragraph(readme) or repo.get("description") or ""
+              badges  = extract_language_badges(readme, repo.get("language"))
+              status  = STATUS.get(name.lower()) or extract_status_emoji(readme)
+              icon    = ICON.get(name.lower(), "📁")
+
+              repo_data.append({
+                  "name":    name,
+                  "icon":    icon,
+                  "desc":    desc[:220] + ("…" if len(desc) > 220 else ""),
+                  "url":     repo["html_url"],
+                  "stars":   repo["stargazers_count"],
+                  "commits": commits,
+                  "badges":  badges,
+                  "status":  status,
+                  "updated": repo["updated_at"][:10],
+                  "lang":    repo.get("language") or "—",
+              })
+              print(f"  {commits:>4} commits — {name}")
+
+          # Sort: pinned first (by PINNED_ORDER), then rest by commits
+          def sort_key(r):
+              name = r["name"].lower()
+              if name in PINNED_ORDER:
+                  return (0, PINNED_ORDER.index(name))
+              return (1, -r["commits"])
+
+          repo_data.sort(key=sort_key)
+          top6 = repo_data[:6]
+
+          # ── Build HTML table ─────────────────────────────────────────────────
+          def build_badge_html(badges):
+              html = ""
+              for label, url in badges:
+                  html += f'        <img src="{url}" alt="{label}"/>\n'
+              return html
+
+          rows_html = ""
+          for i in range(0, len(top6), 2):
+              rows_html += "  <tr>\n"
+              for repo in top6[i:i+2]:
+                  badge_html = build_badge_html(repo["badges"])
+                  icon    = repo["icon"]
+                  rurl    = repo["url"]
+                  rname   = repo["name"]
+                  rdesc   = repo["desc"]
+                  commits = repo["commits"]
+                  status  = repo["status"]
+                  td  = "    <td width=\"50%\" valign=\"top\">\n"
+                  td += f"      <h3>{icon} <a href=\"{rurl}\">{rname}</a></h3>\n"
+                  td += f"      <p>{rdesc}</p>\n"
+                  td += "      <p>\n"
+                  td += badge_html
+                  td += "      </p>\n"
+                  td += f"      <img src=\"https://img.shields.io/badge/commits-{commits}-238636?style=flat-square\"  />\n"
+                  td += "      &nbsp;\n"
+                  td += f"      <img src=\"https://img.shields.io/github/stars/{USERNAME}/{rname}?style=flat-square&color=58A6FF\" />\n"
+                  td += f"      &nbsp; {status}\n"
+                  td += "    </td>\n"
+                  rows_html += td
+              rows_html += "  </tr>\n"
 
           new_block = (
               "<!-- AUTO-PROJECTS:START -->\n"
               "<table>\n"
-              + rows +
+              + rows_html +
               "</table>\n"
               "<!-- AUTO-PROJECTS:END -->"
           )
 
-          # ── Inject into README ─────────────────────────────────────────────
-          with open("README.md", "r") as f:
-              readme = f.read()
+          # ── Inject into README ───────────────────────────────────────────────
+          with open("README.md") as f:
+              readme_profile = f.read()
 
-          pattern = r"<!-- AUTO-PROJECTS:START -->.*?<!-- AUTO-PROJECTS:END -->"
-          if re.search(pattern, readme, re.DOTALL):
-              readme = re.sub(pattern, new_block, readme, flags=re.DOTALL)
-              print("Auto-projects block updated.")
+          pattern = r'<!-- AUTO-PROJECTS:START -->.*?<!-- AUTO-PROJECTS:END -->'
+          if re.search(pattern, readme_profile, re.DOTALL):
+              updated = re.sub(pattern, new_block, readme_profile, flags=re.DOTALL)
+              with open("README.md", "w") as f:
+                  f.write(updated)
+              print("\n✅ README updated successfully.")
           else:
-              print("WARNING: AUTO-PROJECTS markers not found in README.")
-              print("Add these markers around your projects table:")
-              print("<!-- AUTO-PROJECTS:START -->")
-              print("<!-- AUTO-PROJECTS:END -->")
-
-          with open("README.md", "w") as f:
-              f.write(readme)
-
-          # Print summary
-          print(f"\nTop repos by commits:")
-          for r in top:
-              print(f"  {r['commits']:>4} commits — {r['name']}")
+              print("\n⚠️  AUTO-PROJECTS markers not found in README.")
+              print("    Add these around your projects table:")
+              print("    <!-- AUTO-PROJECTS:START -->")
+              print("    <!-- AUTO-PROJECTS:END -->")
           PYEOF
 
-      - name: Commit updated README
+      - name: Commit if changed
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
-          git diff --staged --quiet || git commit -m "chore: auto-update projects by commit count [skip ci]"
-          git push
+          git diff --staged --quiet \
+            && echo "No changes to commit." \
+            || (git commit -m "chore: auto-update projects from repo READMEs [skip ci]" && git push)
