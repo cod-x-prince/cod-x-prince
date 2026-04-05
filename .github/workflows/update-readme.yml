@@ -1,0 +1,168 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# AUTO-UPDATE README — sorts featured projects by commit count automatically
+# Save at: .github/workflows/update-readme.yml
+# in your cod-x-prince/cod-x-prince special repository
+# ─────────────────────────────────────────────────────────────────────────────
+# What it does:
+#   1. Runs daily at 2am UTC + on every push to main
+#   2. Fetches commit counts for all your public repos via GitHub API
+#   3. Rewrites the <!-- AUTO-PROJECTS --> block in your README
+#      with repos sorted by most commits (most active = shown first)
+#   4. Commits the update back to main automatically
+# ─────────────────────────────────────────────────────────────────────────────
+
+name: Auto-Update README Projects
+
+on:
+  schedule:
+    - cron: "0 2 * * *"    # daily at 2am UTC
+  workflow_dispatch:         # manual trigger from Actions tab
+  push:
+    branches:
+      - main
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write        # needed to commit back to repo
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Fetch repos + update README
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: cod-x-prince
+        run: |
+          python3 << 'PYEOF'
+          import requests, os, re, json
+
+          USERNAME = os.environ["GITHUB_USERNAME"]
+          TOKEN    = os.environ["GITHUB_TOKEN"]
+          HEADERS  = {"Authorization": f"Bearer {TOKEN}", "Accept": "application/vnd.github+json"}
+
+          # ── Fetch all public repos ──────────────────────────────────────────
+          repos = []
+          page  = 1
+          while True:
+              r = requests.get(
+                  f"https://api.github.com/users/{USERNAME}/repos",
+                  headers=HEADERS,
+                  params={"per_page": 100, "page": page, "type": "owner"}
+              )
+              data = r.json()
+              if not data: break
+              repos.extend(data)
+              page += 1
+
+          # ── Fetch commit count for each repo ───────────────────────────────
+          def get_commits(repo_name):
+              r = requests.get(
+                  f"https://api.github.com/repos/{USERNAME}/{repo_name}/commits",
+                  headers=HEADERS,
+                  params={"per_page": 1}
+              )
+              # GitHub returns total in Link header
+              link = r.headers.get("Link", "")
+              if 'rel="last"' in link:
+                  last_url = [x.split(";")[0].strip("<>") for x in link.split(",") if 'rel="last"' in x][0]
+                  return int(last_url.split("page=")[-1])
+              return len(r.json()) if isinstance(r.json(), list) else 0
+
+          repo_stats = []
+          for repo in repos:
+              if repo["fork"]: continue   # skip forks
+              commits = get_commits(repo["name"])
+              repo_stats.append({
+                  "name":        repo["name"],
+                  "description": repo["description"] or "",
+                  "url":         repo["html_url"],
+                  "stars":       repo["stargazers_count"],
+                  "language":    repo["language"] or "—",
+                  "commits":     commits,
+                  "updated":     repo["updated_at"][:10],
+              })
+
+          # Sort by commits descending
+          repo_stats.sort(key=lambda x: x["commits"], reverse=True)
+          top = repo_stats[:6]
+
+          # ── Build the auto-projects table ──────────────────────────────────
+          STATUS_HINTS = {
+              "cod-x-prince":   "👤 Profile",
+              "gharam":         "🔥 Shipping",
+              "ozen":           "🔥 Building",
+              "xauusd-fetcher": "🔧 Maintenance",
+              "finance-roadmap":"✅ Shipped",
+              "geo-intel":      "🟡 Building",
+              "hemavision-ai":  "🔬 Research",
+          }
+
+          rows = ""
+          for i in range(0, len(top), 2):
+              rows += "  <tr>\n"
+              for repo in top[i:i+2]:
+                  name   = repo["name"]
+                  status = STATUS_HINTS.get(name.lower(), "🟢 Active")
+                  rows += f'''    <td width="50%" valign="top">
+              <h4><a href="{repo["url"]}">{name}</a></h4>
+              <p>{repo["description"]}</p>
+              <p>
+                <img src="https://img.shields.io/badge/{repo["language"].replace(" ","%20")}-555?style=flat-square"/>
+                <img src="https://img.shields.io/badge/commits-{repo["commits"]}-238636?style=flat-square"/>
+                <img src="https://img.shields.io/github/stars/{USERNAME}/{name}?style=flat-square&color=58A6FF"/>
+              </p>
+              {status} &nbsp;·&nbsp; Updated {repo["updated"]}
+            </td>\n'''
+              rows += "  </tr>\n"
+
+          new_block = (
+              "<!-- AUTO-PROJECTS:START -->\n"
+              "<table>\n"
+              + rows +
+              "</table>\n"
+              "<!-- AUTO-PROJECTS:END -->"
+          )
+
+          # ── Inject into README ─────────────────────────────────────────────
+          with open("README.md", "r") as f:
+              readme = f.read()
+
+          pattern = r"<!-- AUTO-PROJECTS:START -->.*?<!-- AUTO-PROJECTS:END -->"
+          if re.search(pattern, readme, re.DOTALL):
+              readme = re.sub(pattern, new_block, readme, flags=re.DOTALL)
+              print("Auto-projects block updated.")
+          else:
+              print("WARNING: AUTO-PROJECTS markers not found in README.")
+              print("Add these markers around your projects table:")
+              print("<!-- AUTO-PROJECTS:START -->")
+              print("<!-- AUTO-PROJECTS:END -->")
+
+          with open("README.md", "w") as f:
+              f.write(readme)
+
+          # Print summary
+          print(f"\nTop repos by commits:")
+          for r in top:
+              print(f"  {r['commits']:>4} commits — {r['name']}")
+          PYEOF
+
+      - name: Commit updated README
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --staged --quiet || git commit -m "chore: auto-update projects by commit count [skip ci]"
+          git push
