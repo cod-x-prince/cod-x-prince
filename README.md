@@ -42,9 +42,8 @@ let prince = Developer {
     education: "B.E. Artificial Intelligence & ML  —  CMRIT '28",
 
     currently_building: [
-        "gharam       →  PG accommodation marketplace — rebranded, deploying soon  (Next.js 14 + Supabase)",
-        "fast-fetcher →  Ultra-low-latency market data fetcher  (Rust + Turbo Mode) — maintenance",
-        "rust-fetcher →  SIMD-optimized ultra-low-latency market data pipeline",
+        "pg-app       →  PG accommodation marketplace (Gharam) — deploying soon  (Next.js 14 + Supabase)",
+        "xauusd-fetcher → Ultra-low-latency market data fetcher  (Rust + Turbo Mode) — maintenance",
         "ozen         →  Near-invisible OS AI layer  (Electron + React + Ollama)",
         "geo-intel    →  Geopolitical intelligence dashboard + signal overlays",
     ],
@@ -57,7 +56,7 @@ let prince = Developer {
 
     ask_me_about: ["Vibe coding", "Video editing"],
     fun_fact:     "I write market data pipelines faster than most people read them.",
-    total_tracked: "18 hrs 11 mins since Mar 7 2026",
+    total_tracked: "19 hrs 49 mins since Mar 7 2026",
     daily_average:  "1 hr 8 mins",
     top_language:   "TypeScript 25.88% — 1 hr 54 mins",
 };
@@ -114,80 +113,70 @@ let prince = Developer {
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>🦀 <a href="https://github.com/cod-x-prince/xauusd-fetcher">xauusd-fetcher</a></h3>
-      <p>> A production-grade, sub-millisecond market data feed for **Gold (XAU/USD)** and other instruments, built in **Rust** using async WebSocket streaming.</p>
+      <h3>⚡ Fast Market Data Fetcher</h3>
+      <p>Ultra-low-latency XAU/USD market data fetcher built in Rust — powered by Turbo Mode for OS-level performance tuning, SIMD vectorization, and CPU core pinning.</p>
       <p>
-        <img src="https://img.shields.io/badge/Rust-555?style=flat-square" alt="Rust"/>
+        <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Tauri-24C8D8?style=flat-square&logo=tauri&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Canvas_API-F7DF1E?style=flat-square&logo=html5&logoColor=black"/>
       </p>
-      <img src="https://img.shields.io/badge/commits-1-238636?style=flat-square"  />
-      &nbsp;
-      <img src="https://img.shields.io/github/stars/cod-x-prince/xauusd-fetcher?style=flat-square&color=58A6FF" />
-      &nbsp; 🔧 Maintenance
+      <img src="https://img.shields.io/badge/Turbo%20Mode-FF4500?style=flat-square&logo=rust&logoColor=white"/> &nbsp; 🔧 Maintenance
     </td>
     <td width="50%" valign="top">
-      <h3>📊 <a href="https://github.com/cod-x-prince/finance-roadmap">finance-roadmap</a></h3>
-      <p>An interactive, modular, and performance-optimized portal tracking a comprehensive curriculum in quantitative finance, algorithmic trading, and Python AIML engineering. Built to serve as both a daily study dashboard and …</p>
+      <h3>🦀 xauusd-fetcher</h3>
+      <p>Ultra-low-latency XAU/USD market data pipeline — SIMD vectorization, CPU core pinning, RAII-based turbo subsystem for Windows OS-level performance tuning.</p>
       <p>
-        <img src="https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"/>
-        <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React"/>
-        <img src="https://img.shields.io/badge/Vite-B73BFE?style=flat-square&logo=vite&logoColor=FFD62E" alt="Vite"/>
-        <img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white" alt="Vercel"/>
+        <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white"/>
+        <img src="https://img.shields.io/badge/WebSocket-010101?style=flat-square&logo=socket.io&logoColor=white"/>
+        <img src="https://img.shields.io/badge/SIMD-555555?style=flat-square&logo=intel&logoColor=white"/>
       </p>
-      <img src="https://img.shields.io/badge/commits-1-238636?style=flat-square"  />
-      &nbsp;
-      <img src="https://img.shields.io/github/stars/cod-x-prince/finance-roadmap?style=flat-square&color=58A6FF" />
-      &nbsp; ✅ Shipped
+      <a href="https://github.com/cod-x-prince/xauusd-fetcher">→ View Repo</a> &nbsp; 🟢 Active
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>📁 <a href="https://github.com/cod-x-prince/pg-app">pg-app</a></h3>
-      <p>_Verified listings · Zero broker fees · Direct booking · Production-Ready Security_</p>
+      <h3>🏠 Gharam</h3>
+      <p>Full-stack PG accommodation marketplace — owner listing wizard, Razorpay payments, Cloudinary media, NextAuth v4. Rebranded and deploying for real users in Bangalore.</p>
       <p>
-        <img src="https://img.shields.io/badge/Next.js-14.2.35-black?style=flat-square&logo=next.js" alt="Next.js"/>
-        <img src="https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat-square&logo=typescript" alt="TypeScript"/>
-        <img src="https://img.shields.io/badge/Prisma-5.22-2D3748?style=flat-square&logo=prisma" alt="Prisma"/>
-        <img src="https://img.shields.io/badge/PostgreSQL-Supabase-3ECF8E?style=flat-square&logo=postgresql" alt="PostgreSQL"/>
+        <img src="https://img.shields.io/badge/Next.js%2014-000000?style=flat-square&logo=nextdotjs&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Razorpay-02042B?style=flat-square&logo=razorpay&logoColor=white"/>
       </p>
-      <img src="https://img.shields.io/badge/commits-100-238636?style=flat-square"  />
-      &nbsp;
-      <img src="https://img.shields.io/github/stars/cod-x-prince/pg-app?style=flat-square&color=58A6FF" />
-      &nbsp; 🟡 Building
+      <img src="https://img.shields.io/badge/5h%2049m%20last%20week-238636?style=flat-square&logo=wakatime&logoColor=white"/> &nbsp; 🔥 Shipping
     </td>
     <td width="50%" valign="top">
-      <h3>📁 <a href="https://github.com/cod-x-prince/omegle_for_student">omegle_for_student</a></h3>
-      <p>Add your project description here.</p>
+      <h3>🌍 Geo-Intel Dashboard</h3>
+      <p>SATINT-framed multi-asset intelligence system — institutional flow analysis, geopolitical signal overlays, Telegram push alerts, 3-tier product architecture.</p>
       <p>
-        <img src="https://img.shields.io/badge/JavaScript-555?style=flat-square" alt="JavaScript"/>
+        <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
+        <img src="https://img.shields.io/badge/Recharts-22b5bf?style=flat-square"/>
+        <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white"/>
       </p>
-      <img src="https://img.shields.io/badge/commits-21-238636?style=flat-square"  />
-      &nbsp;
-      <img src="https://img.shields.io/github/stars/cod-x-prince/omegle_for_student?style=flat-square&color=58A6FF" />
-      &nbsp; 🟢 Active
+      🟡 Building
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>📁 <a href="https://github.com/cod-x-prince/video-editing-portfolio">video-editing-portfolio</a></h3>
-      <p>A **high-performance, cinematic video editing portfolio** built with modern web technologies and an agentic workflow. Designed to showcase **short-form vertical (Instagram Reels–style) edits**, smooth micro-interactions,…</p>
+      <h3>📊 Quant Roadmap Portal</h3>
+      <p>Interactive quant finance curriculum tracker with progress metrics, structured learning paths, and resource linking for aspiring quants.</p>
       <p>
-        <img src="https://img.shields.io/badge/TypeScript-555?style=flat-square" alt="TypeScript"/>
+        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
+        <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
+        <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white"/>
       </p>
-      <img src="https://img.shields.io/badge/commits-16-238636?style=flat-square"  />
-      &nbsp;
-      <img src="https://img.shields.io/github/stars/cod-x-prince/video-editing-portfolio?style=flat-square&color=58A6FF" />
-      &nbsp; ✅ Live
+      <a href="https://quant-roadmap-portal.vercel.app/">→ Live Demo</a> &nbsp; ✅ Shipped
     </td>
     <td width="50%" valign="top">
-      <h3>📁 <a href="https://github.com/cod-x-prince/ai_master_detail_generator">ai_master_detail_generator</a></h3>
-      <p></p>
+      <h3>🌊 Ozen</h3>
+      <p>Near-invisible OS layer for local AI intelligence — summon AI anywhere by typing <code>@ozen</code>, spawns at cursor position, persistent semantic memory via Membrain knowledge graph. Local-first with Ollama, Groq fallback.</p>
       <p>
-        <img src="https://img.shields.io/badge/Python-555?style=flat-square" alt="Python"/>
+        <img src="https://img.shields.io/badge/Electron-47848F?style=flat-square&logo=electron&logoColor=white"/>
+        <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
+        <img src="https://img.shields.io/badge/Tailwind-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Ollama-FF69B4?style=flat-square&logoColor=white"/>
       </p>
-      <img src="https://img.shields.io/badge/commits-9-238636?style=flat-square"  />
-      &nbsp;
-      <img src="https://img.shields.io/github/stars/cod-x-prince/ai_master_detail_generator?style=flat-square&color=58A6FF" />
-      &nbsp; 🟢 Active
+      🔥 Building
     </td>
   </tr>
 </table>
