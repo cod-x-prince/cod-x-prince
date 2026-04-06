@@ -113,6 +113,20 @@ let prince = Developer {
 <table>
   <tr>
     <td width="50%" valign="top">
+      <h3>🏠 <a href="https://github.com/cod-x-prince/pg-app">pg-app</a></h3>
+      <p>_Verified listings · Zero broker fees · Direct booking · Production-Ready Security_</p>
+      <p>
+        <img src="https://img.shields.io/badge/Next.js-14.2.35-black?style=flat-square&logo=next.js" alt="Next.js"/>
+        <img src="https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat-square&logo=typescript" alt="TypeScript"/>
+        <img src="https://img.shields.io/badge/Prisma-5.22-2D3748?style=flat-square&logo=prisma" alt="Prisma"/>
+        <img src="https://img.shields.io/badge/PostgreSQL-Supabase-3ECF8E?style=flat-square&logo=postgresql" alt="PostgreSQL"/>
+      </p>
+      <img src="https://img.shields.io/badge/commits-100-238636?style=flat-square"  />
+      &nbsp;
+      <img src="https://img.shields.io/github/stars/cod-x-prince/pg-app?style=flat-square&color=58A6FF" />
+      &nbsp; 🔥 Shipping
+    </td>
+    <td width="50%" valign="top">
       <h3>🦀 <a href="https://github.com/cod-x-prince/xauusd-fetcher">xauusd-fetcher</a></h3>
       <p>> A production-grade, sub-millisecond market data feed for **Gold (XAU/USD)** and other instruments, built in **Rust** using async WebSocket streaming.</p>
       <p>
@@ -123,6 +137,8 @@ let prince = Developer {
       <img src="https://img.shields.io/github/stars/cod-x-prince/xauusd-fetcher?style=flat-square&color=58A6FF" />
       &nbsp; 🔧 Maintenance
     </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <h3>📊 <a href="https://github.com/cod-x-prince/finance-roadmap">finance-roadmap</a></h3>
       <p>An interactive, modular, and performance-optimized portal tracking a comprehensive curriculum in quantitative finance, algorithmic trading, and Python AIML engineering. Built to serve as both a daily study dashboard and …</p>
@@ -137,22 +153,6 @@ let prince = Developer {
       <img src="https://img.shields.io/github/stars/cod-x-prince/finance-roadmap?style=flat-square&color=58A6FF" />
       &nbsp; ✅ Shipped
     </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>📁 <a href="https://github.com/cod-x-prince/pg-app">pg-app</a></h3>
-      <p>_Verified listings · Zero broker fees · Direct booking · Production-Ready Security_</p>
-      <p>
-        <img src="https://img.shields.io/badge/Next.js-14.2.35-black?style=flat-square&logo=next.js" alt="Next.js"/>
-        <img src="https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat-square&logo=typescript" alt="TypeScript"/>
-        <img src="https://img.shields.io/badge/Prisma-5.22-2D3748?style=flat-square&logo=prisma" alt="Prisma"/>
-        <img src="https://img.shields.io/badge/PostgreSQL-Supabase-3ECF8E?style=flat-square&logo=postgresql" alt="PostgreSQL"/>
-      </p>
-      <img src="https://img.shields.io/badge/commits-100-238636?style=flat-square"  />
-      &nbsp;
-      <img src="https://img.shields.io/github/stars/cod-x-prince/pg-app?style=flat-square&color=58A6FF" />
-      &nbsp; 🟡 Building
-    </td>
     <td width="50%" valign="top">
       <h3>📁 <a href="https://github.com/cod-x-prince/omegle_for_student">omegle_for_student</a></h3>
       <p>Add your project description here.</p>
@@ -162,12 +162,12 @@ let prince = Developer {
       <img src="https://img.shields.io/badge/commits-21-238636?style=flat-square"  />
       &nbsp;
       <img src="https://img.shields.io/github/stars/cod-x-prince/omegle_for_student?style=flat-square&color=58A6FF" />
-      &nbsp; 🟢 Active
+      &nbsp; 🧪 Experiment
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>📁 <a href="https://github.com/cod-x-prince/video-editing-portfolio">video-editing-portfolio</a></h3>
+      <h3>🎬 <a href="https://github.com/cod-x-prince/video-editing-portfolio">video-editing-portfolio</a></h3>
       <p>A **high-performance, cinematic video editing portfolio** built with modern web technologies and an agentic workflow. Designed to showcase **short-form vertical (Instagram Reels–style) edits**, smooth micro-interactions,…</p>
       <p>
         <img src="https://img.shields.io/badge/TypeScript-555?style=flat-square" alt="TypeScript"/>
@@ -186,7 +186,7 @@ let prince = Developer {
       <img src="https://img.shields.io/badge/commits-9-238636?style=flat-square"  />
       &nbsp;
       <img src="https://img.shields.io/github/stars/cod-x-prince/ai_master_detail_generator?style=flat-square&color=58A6FF" />
-      &nbsp; 🟢 Active
+      &nbsp; 🧪 Experiment
     </td>
   </tr>
 </table>
