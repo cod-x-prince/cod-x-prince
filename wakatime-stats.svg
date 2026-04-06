@@ -1,0 +1,61 @@
+<svg width="500" height="385" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="500" height="385" rx="10" fill="#0d1117"/>
+  <rect width="500" height="385" rx="10" fill="none" stroke="#30363d" stroke-width="1"/>
+
+  <!-- Top accent line -->
+  <rect width="500" height="3" rx="2" fill="#58a6ff" opacity="0.6"/>
+
+  <!-- Header -->
+  <text x="20" y="34" fill="#58a6ff" font-size="14" font-weight="bold" font-family="'Courier New',monospace">&#9201; Last 7 Days &#8212; WakaTime</text>
+  <line x1="20" y1="44" x2="480" y2="44" stroke="#21262d" stroke-width="1"/>
+
+  <!-- Total -->
+  <text x="20" y="65" fill="#8b949e" font-size="10" font-family="'Courier New',monospace" letter-spacing="1">TOTAL</text>
+  <text x="20" y="88" fill="#f0f6fc" font-size="22" font-weight="bold" font-family="'Courier New',monospace">19 hrs 49 mins</text>
+
+  <!-- Daily avg -->
+  <text x="280" y="65" fill="#8b949e" font-size="10" font-family="'Courier New',monospace" letter-spacing="1">DAILY AVG</text>
+  <text x="280" y="88" fill="#f0f6fc" font-size="22" font-weight="bold" font-family="'Courier New',monospace">57 mins</text>
+
+  <line x1="20" y1="100" x2="480" y2="100" stroke="#21262d" stroke-width="1"/>
+  <text x="20" y="112" fill="#8b949e" font-size="10" font-family="'Courier New',monospace" letter-spacing="1">LANGUAGES</text>
+
+  <!-- Language rows -->
+  
+  <!-- TypeScript -->
+  <text x="20" y="134" fill="#8b949e" font-size="12" font-family="'Courier New',monospace">TypeScript</text>
+  <rect x="145" y="123" width="73" height="13" rx="3" fill="#3178c6" opacity="0.88"/>
+  <text x="226" y="134" fill="#8b949e" font-size="11" font-family="'Courier New',monospace">1 hr 54 mins (25.9%)</text>
+  <!-- Bash -->
+  <text x="20" y="164" fill="#8b949e" font-size="12" font-family="'Courier New',monospace">Bash</text>
+  <rect x="145" y="153" width="64" height="13" rx="3" fill="#89e051" opacity="0.88"/>
+  <text x="217" y="164" fill="#8b949e" font-size="11" font-family="'Courier New',monospace">1 hr 40 mins (22.8%)</text>
+  <!-- Markdown -->
+  <text x="20" y="194" fill="#8b949e" font-size="12" font-family="'Courier New',monospace">Markdown</text>
+  <rect x="145" y="183" width="25" height="13" rx="3" fill="#083fa1" opacity="0.88"/>
+  <text x="178" y="194" fill="#8b949e" font-size="11" font-family="'Courier New',monospace">40 mins (9.1%)</text>
+  <!-- JSON -->
+  <text x="20" y="224" fill="#8b949e" font-size="12" font-family="'Courier New',monospace">JSON</text>
+  <rect x="145" y="213" width="25" height="13" rx="3" fill="#c8a96e" opacity="0.88"/>
+  <text x="178" y="224" fill="#8b949e" font-size="11" font-family="'Courier New',monospace">39 mins (8.9%)</text>
+  <!-- HTML -->
+  <text x="20" y="254" fill="#8b949e" font-size="12" font-family="'Courier New',monospace">HTML</text>
+  <rect x="145" y="243" width="23" height="13" rx="3" fill="#e34c26" opacity="0.88"/>
+  <text x="176" y="254" fill="#8b949e" font-size="11" font-family="'Courier New',monospace">36 mins (8.2%)</text>
+  <!-- Git Config -->
+  <text x="20" y="284" fill="#8b949e" font-size="12" font-family="'Courier New',monospace">Git Config</text>
+  <rect x="145" y="273" width="17" height="13" rx="3" fill="#f05133" opacity="0.88"/>
+  <text x="170" y="284" fill="#8b949e" font-size="11" font-family="'Courier New',monospace">27 mins (6.3%)</text>
+  <!-- JavaScript -->
+  <text x="20" y="314" fill="#8b949e" font-size="12" font-family="'Courier New',monospace">JavaScript</text>
+  <rect x="145" y="303" width="13" height="13" rx="3" fill="#f7df1e" opacity="0.88"/>
+  <text x="166" y="314" fill="#8b949e" font-size="11" font-family="'Courier New',monospace">20 mins (4.6%)</text>
+  <!-- Rust -->
+  <text x="20" y="344" fill="#8b949e" font-size="12" font-family="'Courier New',monospace">Rust</text>
+  <rect x="145" y="333" width="7" height="13" rx="3" fill="#dea584" opacity="0.88"/>
+  <text x="160" y="344" fill="#8b949e" font-size="11" font-family="'Courier New',monospace">11 mins (2.6%)</text>
+
+  <!-- Footer -->
+  <text x="480" y="375" fill="#30363d" font-size="10" font-family="'Courier New',monospace" text-anchor="end">wakatime.com/@codxprince</text>
+</svg>
