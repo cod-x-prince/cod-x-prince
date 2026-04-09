@@ -154,6 +154,19 @@ let prince = Developer {
       &nbsp; ✅ Shipped
     </td>
     <td width="50%" valign="top">
+      <h3>📁 <a href="https://github.com/cod-x-prince/3am-devops">3am-devops</a></h3>
+      <p>IncidentEnv is a **real-world incident-response environment** for training and evaluating AI agents on microservice outage remediation. It is designed for OpenEnv-style workflows with typed models, deterministic grading,…</p>
+      <p>
+        <img src="https://img.shields.io/badge/Makefile-555?style=flat-square" alt="Makefile"/>
+      </p>
+      <img src="https://img.shields.io/badge/commits-22-238636?style=flat-square"  />
+      &nbsp;
+      <img src="https://img.shields.io/github/stars/cod-x-prince/3am-devops?style=flat-square&color=58A6FF" />
+      &nbsp; ✅ Live
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
       <h3>📁 <a href="https://github.com/cod-x-prince/omegle_for_student">omegle_for_student</a></h3>
       <p>Add your project description here.</p>
       <p>
@@ -164,8 +177,6 @@ let prince = Developer {
       <img src="https://img.shields.io/github/stars/cod-x-prince/omegle_for_student?style=flat-square&color=58A6FF" />
       &nbsp; 🧪 Experiment
     </td>
-  </tr>
-  <tr>
     <td width="50%" valign="top">
       <h3>🎬 <a href="https://github.com/cod-x-prince/video-editing-portfolio">video-editing-portfolio</a></h3>
       <p>A **high-performance, cinematic video editing portfolio** built with modern web technologies and an agentic workflow. Designed to showcase **short-form vertical (Instagram Reels–style) edits**, smooth micro-interactions,…</p>
@@ -176,17 +187,6 @@ let prince = Developer {
       &nbsp;
       <img src="https://img.shields.io/github/stars/cod-x-prince/video-editing-portfolio?style=flat-square&color=58A6FF" />
       &nbsp; ✅ Live
-    </td>
-    <td width="50%" valign="top">
-      <h3>📁 <a href="https://github.com/cod-x-prince/ai_master_detail_generator">ai_master_detail_generator</a></h3>
-      <p></p>
-      <p>
-        <img src="https://img.shields.io/badge/Python-555?style=flat-square" alt="Python"/>
-      </p>
-      <img src="https://img.shields.io/badge/commits-9-238636?style=flat-square"  />
-      &nbsp;
-      <img src="https://img.shields.io/github/stars/cod-x-prince/ai_master_detail_generator?style=flat-square&color=58A6FF" />
-      &nbsp; 🧪 Experiment
     </td>
   </tr>
 </table>
