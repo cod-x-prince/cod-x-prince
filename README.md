@@ -140,20 +140,6 @@ let prince = Developer {
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>📊 <a href="https://github.com/cod-x-prince/finance-roadmap">finance-roadmap</a></h3>
-      <p>An interactive, modular, and performance-optimized portal tracking a comprehensive curriculum in quantitative finance, algorithmic trading, and Python AIML engineering. Built to serve as both a daily study dashboard and …</p>
-      <p>
-        <img src="https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"/>
-        <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React"/>
-        <img src="https://img.shields.io/badge/Vite-B73BFE?style=flat-square&logo=vite&logoColor=FFD62E" alt="Vite"/>
-        <img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white" alt="Vercel"/>
-      </p>
-      <img src="https://img.shields.io/badge/commits-1-238636?style=flat-square"  />
-      &nbsp;
-      <img src="https://img.shields.io/github/stars/cod-x-prince/finance-roadmap?style=flat-square&color=58A6FF" />
-      &nbsp; ✅ Shipped
-    </td>
-    <td width="50%" valign="top">
       <h3>📁 <a href="https://github.com/cod-x-prince/3am-devops">3am-devops</a></h3>
       <p>IncidentEnv is a **real-world incident-response environment** for training and evaluating AI agents on microservice outage remediation. It is designed for OpenEnv-style workflows with typed models, deterministic grading,…</p>
       <p>
@@ -164,19 +150,6 @@ let prince = Developer {
       <img src="https://img.shields.io/github/stars/cod-x-prince/3am-devops?style=flat-square&color=58A6FF" />
       &nbsp; ✅ Live
     </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>📁 <a href="https://github.com/cod-x-prince/omegle_for_student">omegle_for_student</a></h3>
-      <p>Add your project description here.</p>
-      <p>
-        <img src="https://img.shields.io/badge/JavaScript-555?style=flat-square" alt="JavaScript"/>
-      </p>
-      <img src="https://img.shields.io/badge/commits-21-238636?style=flat-square"  />
-      &nbsp;
-      <img src="https://img.shields.io/github/stars/cod-x-prince/omegle_for_student?style=flat-square&color=58A6FF" />
-      &nbsp; 🧪 Experiment
-    </td>
     <td width="50%" valign="top">
       <h3>🎬 <a href="https://github.com/cod-x-prince/video-editing-portfolio">video-editing-portfolio</a></h3>
       <p>A **high-performance, cinematic video editing portfolio** built with modern web technologies and an agentic workflow. Designed to showcase **short-form vertical (Instagram Reels–style) edits**, smooth micro-interactions,…</p>
@@ -186,6 +159,30 @@ let prince = Developer {
       <img src="https://img.shields.io/badge/commits-16-238636?style=flat-square"  />
       &nbsp;
       <img src="https://img.shields.io/github/stars/cod-x-prince/video-editing-portfolio?style=flat-square&color=58A6FF" />
+      &nbsp; ✅ Live
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>📁 <a href="https://github.com/cod-x-prince/ai-trading-app">ai-trading-app</a></h3>
+      <p>An AI-powered web application built with Python and Streamlit that analyzes stock market data to provide predictive insights. This tool was developed to augment trading decisions by combining technical analysis, news sen…</p>
+      <p>
+        <img src="https://img.shields.io/badge/Python-555?style=flat-square" alt="Python"/>
+      </p>
+      <img src="https://img.shields.io/badge/commits-7-238636?style=flat-square"  />
+      &nbsp;
+      <img src="https://img.shields.io/github/stars/cod-x-prince/ai-trading-app?style=flat-square&color=58A6FF" />
+      &nbsp; ✅ Live
+    </td>
+    <td width="50%" valign="top">
+      <h3>📁 <a href="https://github.com/cod-x-prince/aita-project">aita-project</a></h3>
+      <p>This project is an autonomous, multi-agent AI designed to identify and signal intraday trading opportunities. The system was built from the ground up, starting with research and backtesting and culminating in a live, "Ad…</p>
+      <p>
+        <img src="https://img.shields.io/badge/Python-555?style=flat-square" alt="Python"/>
+      </p>
+      <img src="https://img.shields.io/badge/commits-4-238636?style=flat-square"  />
+      &nbsp;
+      <img src="https://img.shields.io/github/stars/cod-x-prince/aita-project?style=flat-square&color=58A6FF" />
       &nbsp; ✅ Live
     </td>
   </tr>
