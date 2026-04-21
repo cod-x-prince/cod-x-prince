@@ -140,6 +140,17 @@ let prince = Developer {
   </tr>
   <tr>
     <td width="50%" valign="top">
+      <h3>🎬 <a href="https://github.com/cod-x-prince/video-editing-portfolio">video-editing-portfolio</a></h3>
+      <p>A **high-performance, cinematic video editing portfolio** built with modern web technologies and an agentic workflow. Designed to showcase **short-form vertical (Instagram Reels–style) edits**, smooth micro-interactions,…</p>
+      <p>
+        <img src="https://img.shields.io/badge/TypeScript-555?style=flat-square" alt="TypeScript"/>
+      </p>
+      <img src="https://img.shields.io/badge/commits-29-238636?style=flat-square"  />
+      &nbsp;
+      <img src="https://img.shields.io/github/stars/cod-x-prince/video-editing-portfolio?style=flat-square&color=58A6FF" />
+      &nbsp; ✅ Live
+    </td>
+    <td width="50%" valign="top">
       <h3>📁 <a href="https://github.com/cod-x-prince/3am-devops">3am-devops</a></h3>
       <p>IncidentEnv is an OpenEnv-compatible RL environment for microservice incident response. It includes a Rust simulation core, Python environment wrappers, reward/graders, a FastAPI runtime, Torch/PPO training, a React dash…</p>
       <p>
@@ -149,17 +160,6 @@ let prince = Developer {
       &nbsp;
       <img src="https://img.shields.io/github/stars/cod-x-prince/3am-devops?style=flat-square&color=58A6FF" />
       &nbsp; 🔧 Maintenance
-    </td>
-    <td width="50%" valign="top">
-      <h3>🎬 <a href="https://github.com/cod-x-prince/video-editing-portfolio">video-editing-portfolio</a></h3>
-      <p>A **high-performance, cinematic video editing portfolio** built with modern web technologies and an agentic workflow. Designed to showcase **short-form vertical (Instagram Reels–style) edits**, smooth micro-interactions,…</p>
-      <p>
-        <img src="https://img.shields.io/badge/TypeScript-555?style=flat-square" alt="TypeScript"/>
-      </p>
-      <img src="https://img.shields.io/badge/commits-16-238636?style=flat-square"  />
-      &nbsp;
-      <img src="https://img.shields.io/github/stars/cod-x-prince/video-editing-portfolio?style=flat-square&color=58A6FF" />
-      &nbsp; ✅ Live
     </td>
   </tr>
   <tr>
