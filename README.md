@@ -145,7 +145,7 @@ let prince = Developer {
       <p>
         <img src="https://img.shields.io/badge/TypeScript-555?style=flat-square" alt="TypeScript"/>
       </p>
-      <img src="https://img.shields.io/badge/commits-29-238636?style=flat-square"  />
+      <img src="https://img.shields.io/badge/commits-32-238636?style=flat-square"  />
       &nbsp;
       <img src="https://img.shields.io/github/stars/cod-x-prince/video-editing-portfolio?style=flat-square&color=58A6FF" />
       &nbsp; ✅ Live
