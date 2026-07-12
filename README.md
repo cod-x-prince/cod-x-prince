@@ -128,7 +128,7 @@ let prince = Developer {
     </td>
     <td width="50%" valign="top">
       <h3>🦀 <a href="https://github.com/cod-x-prince/xauusd-fetcher">xauusd-fetcher</a></h3>
-      <p>Ultra-low-latency XAU/USD market data feed in Rust</p>
+      <p>> A production-grade, sub-millisecond market data feed for **Gold (XAU/USD)** and other instruments, built in **Rust** using async WebSocket streaming.</p>
       <p>
         <img src="https://img.shields.io/badge/Rust-555?style=flat-square" alt="Rust"/>
       </p>
