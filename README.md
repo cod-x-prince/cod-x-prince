@@ -164,6 +164,17 @@ let prince = Developer {
   </tr>
   <tr>
     <td width="50%" valign="top">
+      <h3>📁 <a href="https://github.com/cod-x-prince/rebranding">rebranding</a></h3>
+      <p>A clean, editorial video-editing portfolio built with React, TypeScript, and Vite.</p>
+      <p>
+        <img src="https://img.shields.io/badge/TypeScript-555?style=flat-square" alt="TypeScript"/>
+      </p>
+      <img src="https://img.shields.io/badge/commits-15-238636?style=flat-square"  />
+      &nbsp;
+      <img src="https://img.shields.io/github/stars/cod-x-prince/rebranding?style=flat-square&color=58A6FF" />
+      &nbsp; 🟡 Building
+    </td>
+    <td width="50%" valign="top">
       <h3>📁 <a href="https://github.com/cod-x-prince/ai-trading-app">ai-trading-app</a></h3>
       <p>An AI-powered web application built with Python and Streamlit that analyzes stock market data to provide predictive insights. This tool was developed to augment trading decisions by combining technical analysis, news sen…</p>
       <p>
@@ -172,17 +183,6 @@ let prince = Developer {
       <img src="https://img.shields.io/badge/commits-7-238636?style=flat-square"  />
       &nbsp;
       <img src="https://img.shields.io/github/stars/cod-x-prince/ai-trading-app?style=flat-square&color=58A6FF" />
-      &nbsp; ✅ Live
-    </td>
-    <td width="50%" valign="top">
-      <h3>📁 <a href="https://github.com/cod-x-prince/aita-project">aita-project</a></h3>
-      <p>This project is an autonomous, multi-agent AI designed to identify and signal intraday trading opportunities. The system was built from the ground up, starting with research and backtesting and culminating in a live, "Ad…</p>
-      <p>
-        <img src="https://img.shields.io/badge/Python-555?style=flat-square" alt="Python"/>
-      </p>
-      <img src="https://img.shields.io/badge/commits-4-238636?style=flat-square"  />
-      &nbsp;
-      <img src="https://img.shields.io/github/stars/cod-x-prince/aita-project?style=flat-square&color=58A6FF" />
       &nbsp; ✅ Live
     </td>
   </tr>
