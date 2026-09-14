@@ -151,6 +151,19 @@ let prince = Developer {
       &nbsp; ✅ Live
     </td>
     <td width="50%" valign="top">
+      <h3>📁 <a href="https://github.com/cod-x-prince/signature-portfolio">signature-portfolio</a></h3>
+      <p>A luxury editorial portfolio and digital exhibition for **Parmbeer Singh**, designed as a luxury editorial studio, black gallery, and personal digital experience for personal-brand founders, CEOs, and operators.</p>
+      <p>
+        <img src="https://img.shields.io/badge/TypeScript-555?style=flat-square" alt="TypeScript"/>
+      </p>
+      <img src="https://img.shields.io/badge/commits-27-238636?style=flat-square"  />
+      &nbsp;
+      <img src="https://img.shields.io/github/stars/cod-x-prince/signature-portfolio?style=flat-square&color=58A6FF" />
+      &nbsp; 🟡 Building
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
       <h3>📁 <a href="https://github.com/cod-x-prince/3am-devops">3am-devops</a></h3>
       <p>IncidentEnv is an OpenEnv-compatible RL environment for microservice incident response. It includes a Rust simulation core, Python environment wrappers, reward/graders, a FastAPI runtime, Torch/PPO training, a React dash…</p>
       <p>
@@ -161,8 +174,6 @@ let prince = Developer {
       <img src="https://img.shields.io/github/stars/cod-x-prince/3am-devops?style=flat-square&color=58A6FF" />
       &nbsp; 🔧 Maintenance
     </td>
-  </tr>
-  <tr>
     <td width="50%" valign="top">
       <h3>📁 <a href="https://github.com/cod-x-prince/rebranding">rebranding</a></h3>
       <p>A clean, editorial video-editing portfolio built with React, TypeScript, and Vite.</p>
@@ -173,17 +184,6 @@ let prince = Developer {
       &nbsp;
       <img src="https://img.shields.io/github/stars/cod-x-prince/rebranding?style=flat-square&color=58A6FF" />
       &nbsp; 🟡 Building
-    </td>
-    <td width="50%" valign="top">
-      <h3>📁 <a href="https://github.com/cod-x-prince/ai-trading-app">ai-trading-app</a></h3>
-      <p>An AI-powered web application built with Python and Streamlit that analyzes stock market data to provide predictive insights. This tool was developed to augment trading decisions by combining technical analysis, news sen…</p>
-      <p>
-        <img src="https://img.shields.io/badge/Python-555?style=flat-square" alt="Python"/>
-      </p>
-      <img src="https://img.shields.io/badge/commits-7-238636?style=flat-square"  />
-      &nbsp;
-      <img src="https://img.shields.io/github/stars/cod-x-prince/ai-trading-app?style=flat-square&color=58A6FF" />
-      &nbsp; ✅ Live
     </td>
   </tr>
 </table>
